@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  EventCollectionViewCell.h
 //  PW_Interview_Project
 //
 //  Created by Ricardo Guillen on 1/26/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface EventCollectionViewCell : UICollectionViewCell
 
 @end
-

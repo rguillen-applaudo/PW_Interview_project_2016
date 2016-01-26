@@ -9,23 +9,32 @@
 /* Begin PBXBuildFile section */
 		4A1D61201C57D1FA004D5524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D611F1C57D1FA004D5524 /* main.m */; };
 		4A1D61231C57D1FA004D5524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D61221C57D1FA004D5524 /* AppDelegate.m */; };
-		4A1D61261C57D1FA004D5524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D61251C57D1FA004D5524 /* ViewController.m */; };
-		4A1D61291C57D1FA004D5524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1D61271C57D1FA004D5524 /* Main.storyboard */; };
 		4A1D612B1C57D1FA004D5524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1D612A1C57D1FA004D5524 /* Assets.xcassets */; };
 		4A1D612E1C57D1FA004D5524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1D612C1C57D1FA004D5524 /* LaunchScreen.storyboard */; };
+		4A32B08F1C57D80D00BB7567 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B08D1C57D80D00BB7567 /* MasterViewController.m */; };
+		4A32B0901C57D80D00BB7567 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B08E1C57D80D00BB7567 /* MasterViewController.xib */; };
+		4A32B0961C57DAD400BB7567 /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0941C57DAD400BB7567 /* EventCollectionViewCell.m */; };
+		4A32B0971C57DAD400BB7567 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0951C57DAD400BB7567 /* EventCollectionViewCell.xib */; };
+		F855F626A1C34956318583CF /* libPods-PW_Interview_Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PW_Interview_Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1D611B1C57D1FA004D5524 /* PW_Interview_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PW_Interview_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1D611F1C57D1FA004D5524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4A1D61211C57D1FA004D5524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4A1D61221C57D1FA004D5524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4A1D61241C57D1FA004D5524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4A1D61251C57D1FA004D5524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4A1D61281C57D1FA004D5524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A1D61211C57D1FA004D5524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PW_Interview_Project/AppDelegate.h; sourceTree = "<group>"; };
+		4A1D61221C57D1FA004D5524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PW_Interview_Project/AppDelegate.m; sourceTree = "<group>"; };
 		4A1D612A1C57D1FA004D5524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A1D612D1C57D1FA004D5524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A1D612F1C57D1FA004D5524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A32B08C1C57D80D00BB7567 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		4A32B08D1C57D80D00BB7567 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		4A32B08E1C57D80D00BB7567 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		4A32B0931C57DAD400BB7567 /* EventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCollectionViewCell.h; sourceTree = "<group>"; };
+		4A32B0941C57DAD400BB7567 /* EventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCollectionViewCell.m; sourceTree = "<group>"; };
+		4A32B0951C57DAD400BB7567 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
+		73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.debug.xcconfig"; sourceTree = "<group>"; };
+		BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F855F626A1C34956318583CF /* libPods-PW_Interview_Project.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +52,12 @@
 		4A1D61121C57D1FA004D5524 = {
 			isa = PBXGroup;
 			children = (
+				4A1D61211C57D1FA004D5524 /* AppDelegate.h */,
+				4A1D61221C57D1FA004D5524 /* AppDelegate.m */,
 				4A1D611D1C57D1FA004D5524 /* PW_Interview_Project */,
 				4A1D611C1C57D1FA004D5524 /* Products */,
+				6E8E57C0C531181921E2B199 /* Pods */,
+				BBA48D414168DF4A17FFAE4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +72,8 @@
 		4A1D611D1C57D1FA004D5524 /* PW_Interview_Project */ = {
 			isa = PBXGroup;
 			children = (
-				4A1D61211C57D1FA004D5524 /* AppDelegate.h */,
-				4A1D61221C57D1FA004D5524 /* AppDelegate.m */,
-				4A1D61241C57D1FA004D5524 /* ViewController.h */,
-				4A1D61251C57D1FA004D5524 /* ViewController.m */,
-				4A1D61271C57D1FA004D5524 /* Main.storyboard */,
+				4A32B0921C57D81C00BB7567 /* Views */,
+				4A32B08B1C57D7C600BB7567 /* Controllers */,
 				4A1D612A1C57D1FA004D5524 /* Assets.xcassets */,
 				4A1D612C1C57D1FA004D5524 /* LaunchScreen.storyboard */,
 				4A1D612F1C57D1FA004D5524 /* Info.plist */,
@@ -79,6 +90,67 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4A32B08B1C57D7C600BB7567 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A32B0911C57D81200BB7567 /* Master View Controller */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4A32B0911C57D81200BB7567 /* Master View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A32B08C1C57D80D00BB7567 /* MasterViewController.h */,
+				4A32B08D1C57D80D00BB7567 /* MasterViewController.m */,
+			);
+			name = "Master View Controller";
+			sourceTree = "<group>";
+		};
+		4A32B0921C57D81C00BB7567 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A32B0981C57DAEE00BB7567 /* Cells */,
+				4A32B08E1C57D80D00BB7567 /* MasterViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4A32B0981C57DAEE00BB7567 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A32B0991C57DB0B00BB7567 /* Event CollectionView Cell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4A32B0991C57DB0B00BB7567 /* Event CollectionView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4A32B0931C57DAD400BB7567 /* EventCollectionViewCell.h */,
+				4A32B0941C57DAD400BB7567 /* EventCollectionViewCell.m */,
+				4A32B0951C57DAD400BB7567 /* EventCollectionViewCell.xib */,
+			);
+			name = "Event CollectionView Cell";
+			sourceTree = "<group>";
+		};
+		6E8E57C0C531181921E2B199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */,
+				BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBA48D414168DF4A17FFAE4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A1D61321C57D1FA004D5524 /* Build configuration list for PBXNativeTarget "PW_Interview_Project" */;
 			buildPhases = (
+				96FE76CA862ABC1FAF12F8EA /* Check Pods Manifest.lock */,
 				4A1D61171C57D1FA004D5524 /* Sources */,
 				4A1D61181C57D1FA004D5524 /* Frameworks */,
 				4A1D61191C57D1FA004D5524 /* Resources */,
+				0FA101E0EE99649755FC2748 /* Embed Pods Frameworks */,
+				3EFC8578A5086BCF414FE689 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,20 +212,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A1D612E1C57D1FA004D5524 /* LaunchScreen.storyboard in Resources */,
+				4A32B0971C57DAD400BB7567 /* EventCollectionViewCell.xib in Resources */,
 				4A1D612B1C57D1FA004D5524 /* Assets.xcassets in Resources */,
-				4A1D61291C57D1FA004D5524 /* Main.storyboard in Resources */,
+				4A32B0901C57D80D00BB7567 /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FA101E0EE99649755FC2748 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EFC8578A5086BCF414FE689 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96FE76CA862ABC1FAF12F8EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A1D61171C57D1FA004D5524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A1D61261C57D1FA004D5524 /* ViewController.m in Sources */,
 				4A1D61231C57D1FA004D5524 /* AppDelegate.m in Sources */,
+				4A32B0961C57DAD400BB7567 /* EventCollectionViewCell.m in Sources */,
+				4A32B08F1C57D80D00BB7567 /* MasterViewController.m in Sources */,
 				4A1D61201C57D1FA004D5524 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +283,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4A1D61271C57D1FA004D5524 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A1D61281C57D1FA004D5524 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A1D612C1C57D1FA004D5524 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,9 +378,11 @@
 		};
 		4A1D61331C57D1FA004D5524 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PW_Interview_Project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applaudostudios.PW-Interview-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +391,11 @@
 		};
 		4A1D61341C57D1FA004D5524 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PW_Interview_Project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applaudostudios.PW-Interview-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +421,7 @@
 				4A1D61341C57D1FA004D5524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
