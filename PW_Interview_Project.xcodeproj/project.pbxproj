@@ -38,6 +38,7 @@
 		4A32B09A1C57DCEF00BB7567 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		4A32B0A01C57E2BF00BB7567 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				4A1D611F1C57D1FA004D5524 /* main.m */,
+				4A32B0A01C57E2BF00BB7567 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -399,6 +401,7 @@
 			baseConfigurationReference = 73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PW_Interview_Project/PrefixHeader.pch";
 				INFOPLIST_FILE = PW_Interview_Project/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -412,6 +415,7 @@
 			baseConfigurationReference = BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PW_Interview_Project/PrefixHeader.pch";
 				INFOPLIST_FILE = PW_Interview_Project/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -14,4 +14,13 @@
     // Initialization code
 }
 
+-(void)drawRect:(CGRect)rect{
+    [super drawRect:rect];
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = self.gradientView.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[[[UIColor blackColor] colorWithAlphaComponent:0.6] CGColor], (id)[[[UIColor whiteColor] colorWithAlphaComponent:0.5] CGColor], nil];
+    [self.gradientView.layer insertSublayer:gradient atIndex:0];
+}
+
 @end

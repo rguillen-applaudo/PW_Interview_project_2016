@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface EventCollectionViewCell : UICollectionViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (strong, nonatomic) IBOutlet UIView *gradientView;
+@property (strong, nonatomic) IBOutlet UILabel *timestampLabel;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *subtitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end
