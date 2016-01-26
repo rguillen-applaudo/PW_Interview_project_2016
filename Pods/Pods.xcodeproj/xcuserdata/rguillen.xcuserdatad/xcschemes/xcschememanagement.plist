@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LTNavigationBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PW_Interview_Project.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>20E74CEB7502F8129EF3134016ED2490</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C6DC2C11BEAFA0C4ED2AD02A21034F83</key>
+		<key>81A311CB0A706632BB274E94C0FC99D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>

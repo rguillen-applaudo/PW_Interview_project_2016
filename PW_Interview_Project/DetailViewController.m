@@ -11,8 +11,12 @@
 #import "EventItemTitleTableViewCell.h"
 #import "EventItemDescriptionTableViewCell.h"
 
+#import "UINavigationBar+Awesome.h"
+#define NAVBAR_CHANGE_POINT 100
+
 @interface DetailViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *eventItems;
+@property (nonatomic, assign) float originalYPosition;
 @end
 
 @implementation DetailViewController
@@ -23,6 +27,7 @@
     [self configureNavBarActions];
     [self configureDetailTableView];
     [self configureEventItems];
+    self.originalYPosition = self.eventDetailBackgroundImage.frame.origin.y;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,19 +48,12 @@
 #pragma mark - Nav Appearance
 
 - (void)restoreDefaultAppearance {
-    //TODO: - RG - Resrore default NavBar appearance
-    [self.navigationController.navigationBar setBackgroundImage:nil
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = nil;
-    self.navigationController.navigationBar.translucent = YES;
+    [self.navigationController.navigationBar lt_reset];
 }
 
 - (void)configureTranslucentAppearance {
-    //TODO: - RG - Set Translucent NavBar appearance
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                             forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.navigationBar.translucent = YES;
+    [self scrollViewDidScroll:self.eventDetailTableView];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
 
 #pragma mark - UITableView DataSource
@@ -103,6 +101,14 @@
     return nil;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewAutomaticDimension;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewAutomaticDimension;
+}
+
 #pragma mark - Nav Bar Actions
 
 -(void)configureNavBarActions{
@@ -116,6 +122,8 @@
                                                                                  target:self.navigationController
                                                                                  action:@selector(popViewControllerAnimated:)];
     self.navigationItem.rightBarButtonItem = shareButton;
+    
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
 }
 
 #pragma mark - TableView Confirugation
@@ -154,6 +162,39 @@
                             @"text" : @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                             }
                         ];
+}
+
+#pragma mark - Scroll View Delegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    // Nav bar changes
+    UIColor * color = [UIColor whiteColor];
+    CGFloat offsetY = scrollView.contentOffset.y;
+    if (offsetY > NAVBAR_CHANGE_POINT) {
+        CGFloat alpha = MIN(1, 1 - ((NAVBAR_CHANGE_POINT + 64 - offsetY) / 64));
+        [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
+        [self.navigationController.navigationBar setShadowImage:nil];
+        self.title = @"DeathStar Ventilation Design Meeting";
+    } else {
+        [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:0]];
+        [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+        self.title = @"";
+    }
+    
+    // Header Image Changes
+    if (offsetY > 0)
+    {
+        CGRect currentFrame = self.eventDetailBackgroundImage.frame;
+        CGRect newFrame = CGRectMake(currentFrame.origin.x, self.originalYPosition - (offsetY / 3), currentFrame.size.width, currentFrame.size.height);
+        self.eventDetailBackgroundImage.frame = newFrame;
+    }
+    else
+    {
+        CGRect currentFrame = self.eventDetailBackgroundImage.frame;
+        CGRect newFrame = CGRectMake(currentFrame.origin.x, 0, currentFrame.size.width, 250 - offsetY);
+        self.eventDetailBackgroundImage.frame = newFrame;
+    }
 }
 
 @end
