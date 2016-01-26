@@ -32,6 +32,11 @@
     [self requestEventsFromAPI];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.eventsCollectionView performBatchUpdates:nil completion:nil];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -116,6 +121,13 @@
         //TODO: - RG - Show alert
     }
     
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [self.eventsCollectionView performBatchUpdates:nil completion:^(BOOL completed){
+        [self.eventsCollectionView reloadItemsAtIndexPaths:[self.eventsCollectionView indexPathsForVisibleItems]];
+    }];
 }
 
 @end

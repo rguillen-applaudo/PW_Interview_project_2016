@@ -127,7 +127,18 @@
 #pragma mark - TableView Confirugation
 
 -(void)configureDetailTableView{
-    UIView *gradientView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 250.0f)];
+    [self.eventDetailTableView setBackgroundColor:[UIColor clearColor]];
+    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemTimestampTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemTimeStampCell"];
+    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemTitleTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemTitleCell"];
+    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemDescriptionTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemDescriptionCell"];
+    self.eventDetailTableView.rowHeight = UITableViewAutomaticDimension;
+    self.eventDetailTableView.estimatedRowHeight = 160.0;
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    
+    UIView *gradientView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.eventDetailTableView.frame.size.width, 250.0f)];
     
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = gradientView.bounds;
@@ -135,12 +146,6 @@
     [gradientView.layer insertSublayer:gradient atIndex:0];
     
     [self.eventDetailTableView setTableHeaderView:gradientView];
-    [self.eventDetailTableView setBackgroundColor:[UIColor clearColor]];
-    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemTimestampTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemTimeStampCell"];
-    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemTitleTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemTitleCell"];
-    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemDescriptionTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemDescriptionCell"];
-    self.eventDetailTableView.rowHeight = UITableViewAutomaticDimension;
-    self.eventDetailTableView.estimatedRowHeight = 160.0;
 }
 
 #pragma mark - Configure Event Items
@@ -218,6 +223,9 @@
     }
     
     UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:sharingItems applicationActivities:nil];
+    if (IS_IPAD) {
+        activityController.popoverPresentationController.sourceView = self.eventDetailTableView;
+    }
     [self presentViewController:activityController animated:YES completion:nil];
 }
 
