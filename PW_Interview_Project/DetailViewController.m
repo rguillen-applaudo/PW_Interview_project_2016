@@ -8,7 +8,7 @@
 
 #import "DetailViewController.h"
 
-@interface DetailViewController ()
+@interface DetailViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view from its nib.
     [self.view setBackgroundColor:[UIColor greenColor]];
     self.title = @"Detail view";
+    [self configureDetailTableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,6 +45,27 @@
 
 - (void)configureTranslucentAppearance {
 
+}
+
+#pragma mark - UITableView DataSource
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 0;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 0;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return nil;
+}
+
+#pragma mark - TableView Confirugation
+
+-(void)configureDetailTableView{
+    [self.eventDetailTableView setTableHeaderView:[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 250.0f)]];
+    [self.eventDetailTableView setBackgroundColor:[UIColor clearColor]];
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *eventDetailBackgroundImage;
+@property (strong, nonatomic) IBOutlet UITableView *eventDetailTableView;
 @end

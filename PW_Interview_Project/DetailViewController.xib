@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
             <connections>
+                <outlet property="eventDetailBackgroundImage" destination="v7U-z1-uwj" id="Rb9-8z-UTW"/>
+                <outlet property="eventDetailTableView" destination="ajw-Ze-9mH" id="LFl-m3-3Bd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +16,35 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eventBackgroundTest" translatesAutoresizingMaskIntoConstraints="NO" id="v7U-z1-uwj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="DMS-fb-jn7"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ajw-Ze-9mH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3E7-6X-LuK"/>
+                        <outlet property="delegate" destination="-1" id="DH0-KK-9qW"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ajw-Ze-9mH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="63J-lB-sJp"/>
+                <constraint firstAttribute="bottom" secondItem="ajw-Ze-9mH" secondAttribute="bottom" id="LVg-7i-gnP"/>
+                <constraint firstItem="ajw-Ze-9mH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MRZ-pv-Unr"/>
+                <constraint firstAttribute="trailing" secondItem="v7U-z1-uwj" secondAttribute="trailing" id="RPV-gE-HaO"/>
+                <constraint firstItem="v7U-z1-uwj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="USK-QF-cdY"/>
+                <constraint firstAttribute="trailing" secondItem="ajw-Ze-9mH" secondAttribute="trailing" id="awm-yE-3cM"/>
+                <constraint firstItem="v7U-z1-uwj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rEA-IS-8eC"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="eventBackgroundTest" width="867" height="586"/>
+    </resources>
 </document>

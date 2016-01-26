@@ -50,9 +50,9 @@
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (IS_IPAD) {
         float itemWidth = self.view.bounds.size.width/2;
-        return CGSizeMake(itemWidth, 200);
+        return CGSizeMake(itemWidth, 250);
     }
-    return CGSizeMake(self.view.bounds.size.width, 200);
+    return CGSizeMake(self.view.bounds.size.width, 250);
 }
 
 #pragma mark - CollectionView Delegate
