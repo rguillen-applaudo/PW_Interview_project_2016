@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventModel.h"
 
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *eventDetailBackgroundImage;
 @property (strong, nonatomic) IBOutlet UITableView *eventDetailTableView;
+@property (strong, nonatomic) EventModel *event;
 @end

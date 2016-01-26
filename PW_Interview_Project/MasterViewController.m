@@ -74,7 +74,9 @@
 #pragma mark - CollectionView Delegate
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    EventModel *event = [self.eventsArray objectAtIndex:indexPath.row];
     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]];
+    detailViewController.event = event;
     [[self navigationController] pushViewController:detailViewController animated:YES];
 }
 

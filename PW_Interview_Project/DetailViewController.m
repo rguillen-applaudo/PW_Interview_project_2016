@@ -10,6 +10,7 @@
 #import "EventItemTimestampTableViewCell.h"
 #import "EventItemTitleTableViewCell.h"
 #import "EventItemDescriptionTableViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #import "UINavigationBar+Awesome.h"
 #define NAVBAR_CHANGE_POINT 100
@@ -112,11 +113,8 @@
 #pragma mark - Nav Bar Actions
 
 -(void)configureNavBarActions{
-//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"]
-//                                                                   style:UIBarButtonItemStylePlain
-//                                                                  target:self.navigationController
-//                                                                  action:@selector(popViewControllerAnimated:)];
-//    self.navigationItem.leftBarButtonItem = backButton;
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                         forBarMetrics:UIBarMetricsDefault];
     
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                                                                  target:self.navigationController
@@ -148,18 +146,20 @@
 #pragma mark - Configure Event Items
 
 -(void)configureEventItems{
+    [self.eventDetailBackgroundImage sd_setImageWithURL:[NSURL URLWithString:self.event.imageSTR]
+                            placeholderImage:[UIImage imageNamed:@"placeholder"]];
     self.eventItems = @[
                         @{
                             @"item" : @"timestamp",
-                            @"text" : @"May 4, 2015 at 4:30pm"
+                            @"text" : self.event.formattedTimestamp
                             },
                         @{
                             @"item" : @"title",
-                            @"text" : @"DeathStar Ventilation Design Meeting"
+                            @"text" : self.event.titleSTR
                             },
                         @{
                             @"item" : @"description",
-                            @"text" : @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            @"text" : self.event.descriptionSTR
                             }
                         ];
 }
