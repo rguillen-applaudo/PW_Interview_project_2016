@@ -17,4 +17,8 @@
 @property (strong, nonatomic) NSDate *dateSTR;
 @property (strong, nonatomic) NSString *locationline1STR;
 @property (strong, nonatomic) NSString<Optional> *locationline2STR;
+
+-(NSString *)formattedTimestamp;
+-(NSString *)truncatedDescription;
+
 @end

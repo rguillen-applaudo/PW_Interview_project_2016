@@ -54,8 +54,9 @@
     
     [cell.backgroundImage sd_setImageWithURL:[NSURL URLWithString:event.imageSTR]
                       placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    cell.timestampLabel.text = event.formattedTimestamp;
     cell.titleLabel.text = event.titleSTR;
-    cell.descriptionLabel.text = event.descriptionSTR;
+    cell.descriptionLabel.text = event.truncatedDescription;
     cell.subtitleLabel.text = event.locationline1STR;
     return cell;
 }

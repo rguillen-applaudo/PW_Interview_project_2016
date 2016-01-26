@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaV-Gc-VhA" userLabel="TimeStamp">
-                        <rect key="frame" x="8" y="53" width="304" height="21"/>
+                        <rect key="frame" x="8" y="76" width="304" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="vqX-99-bbz"/>
                         </constraints>
@@ -29,16 +29,16 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klT-G7-b4f" userLabel="Title">
-                        <rect key="frame" x="8" y="82" width="304" height="29"/>
+                        <rect key="frame" x="8" y="96" width="304" height="29"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="29" id="MFo-VD-Egy"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-hQ-dB8" userLabel="SubTile">
-                        <rect key="frame" x="8" y="119" width="304" height="21"/>
+                        <rect key="frame" x="8" y="127" width="304" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="KQK-W8-f6X"/>
                         </constraints>
@@ -65,8 +65,8 @@
                 <constraint firstAttribute="trailing" secondItem="NaV-Gc-VhA" secondAttribute="trailing" constant="8" id="Gtp-Xm-b8y"/>
                 <constraint firstAttribute="bottom" secondItem="Z43-43-gLx" secondAttribute="bottom" id="IrH-e8-X4W"/>
                 <constraint firstAttribute="trailing" secondItem="klT-G7-b4f" secondAttribute="trailing" constant="8" id="LaS-CO-Rmi"/>
-                <constraint firstItem="ccx-hQ-dB8" firstAttribute="top" secondItem="klT-G7-b4f" secondAttribute="bottom" constant="8" id="Lyk-ys-eYd"/>
-                <constraint firstItem="klT-G7-b4f" firstAttribute="top" secondItem="NaV-Gc-VhA" secondAttribute="bottom" constant="8" id="PUs-qz-HgH"/>
+                <constraint firstItem="ccx-hQ-dB8" firstAttribute="top" secondItem="klT-G7-b4f" secondAttribute="bottom" constant="2" id="Lyk-ys-eYd"/>
+                <constraint firstItem="klT-G7-b4f" firstAttribute="top" secondItem="NaV-Gc-VhA" secondAttribute="bottom" constant="-1" id="PUs-qz-HgH"/>
                 <constraint firstItem="2ka-uz-r4D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="We7-Wx-g4a"/>
                 <constraint firstAttribute="trailing" secondItem="2ka-uz-r4D" secondAttribute="trailing" id="ZI0-Cf-532"/>
                 <constraint firstItem="SLr-Ys-rxu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="ZTR-jp-iVI"/>
@@ -79,7 +79,7 @@
                 <constraint firstItem="NaV-Gc-VhA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="kyl-mT-8Mn"/>
                 <constraint firstItem="klT-G7-b4f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="mOv-9F-exO"/>
                 <constraint firstAttribute="trailing" secondItem="Z43-43-gLx" secondAttribute="trailing" id="pp2-AX-Nvu"/>
-                <constraint firstItem="SLr-Ys-rxu" firstAttribute="top" secondItem="ccx-hQ-dB8" secondAttribute="bottom" constant="8" id="vtc-FG-FVf"/>
+                <constraint firstItem="SLr-Ys-rxu" firstAttribute="top" secondItem="ccx-hQ-dB8" secondAttribute="bottom" id="vtc-FG-FVf"/>
             </constraints>
             <connections>
                 <outlet property="backgroundImage" destination="Z43-43-gLx" id="Ndl-5g-VbF"/>
@@ -89,7 +89,7 @@
                 <outlet property="timestampLabel" destination="NaV-Gc-VhA" id="ao8-Wy-vgf"/>
                 <outlet property="titleLabel" destination="klT-G7-b4f" id="fXd-eS-0Am"/>
             </connections>
-            <point key="canvasLocation" x="-39" y="218"/>
+            <point key="canvasLocation" x="-248" y="165"/>
         </collectionViewCell>
     </objects>
     <resources>

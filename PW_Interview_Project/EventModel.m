@@ -7,8 +7,10 @@
 //
 
 #import "EventModel.h"
+#import "DateFormatter.h"
 
 @implementation EventModel
+
 +(JSONKeyMapper*)keyMapper
 {
     return [[JSONKeyMapper alloc] initWithDictionary:@{
@@ -22,4 +24,23 @@
                                                        @"locationline2": @"locationline2STR",
                                                        }];
 }
+
+-(NSString *)formattedTimestamp{
+    NSString *stringFromDate = [[DateFormatter alloc] formattedStringForTimeStamp:self.timestampSTR];
+    return stringFromDate;
+}
+
+-(NSString *)truncatedDescription{
+    NSRange stringRange = {0,100};
+    NSString *myString = self.descriptionSTR;
+    if (myString.length > 100) {
+        NSString *shortString = [myString substringWithRange:stringRange];
+        return shortString;
+    }
+    else{
+        return myString;
+    }
+    
+}
+
 @end
