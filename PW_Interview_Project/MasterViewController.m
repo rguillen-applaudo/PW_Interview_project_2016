@@ -14,7 +14,7 @@
 #import "EventModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface MasterViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface MasterViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UICollectionView *eventsCollectionView;
 @property (nonatomic, strong) NSMutableArray *eventsArray;
 @property (nonatomic, strong) NetworkManager *networkManager;
@@ -118,9 +118,19 @@
     }
     else{
         NSLog(@"NOT CONNECTED");
-        //TODO: - RG - Show alert
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network connection" message:@"Network not available" delegate:self cancelButtonTitle:@"Retry" otherButtonTitles:nil];
+        [alert show];
     }
     
+}
+
+#pragma mark - AlertView Delegate
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0)
+    {
+        [self requestEventsFromAPI];
+    }
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
