@@ -15,6 +15,8 @@
 		4A32B0901C57D80D00BB7567 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B08E1C57D80D00BB7567 /* MasterViewController.xib */; };
 		4A32B0961C57DAD400BB7567 /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0941C57DAD400BB7567 /* EventCollectionViewCell.m */; };
 		4A32B0971C57DAD400BB7567 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0951C57DAD400BB7567 /* EventCollectionViewCell.xib */; };
+		4A32B09D1C57DCEF00BB7567 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */; };
+		4A32B09E1C57DCEF00BB7567 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */; };
 		F855F626A1C34956318583CF /* libPods-PW_Interview_Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,9 @@
 		4A32B0931C57DAD400BB7567 /* EventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCollectionViewCell.h; sourceTree = "<group>"; };
 		4A32B0941C57DAD400BB7567 /* EventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCollectionViewCell.m; sourceTree = "<group>"; };
 		4A32B0951C57DAD400BB7567 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
+		4A32B09A1C57DCEF00BB7567 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4A32B0911C57D81200BB7567 /* Master View Controller */,
+				4A32B09F1C57DCF400BB7567 /* Detail View Controller */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +118,7 @@
 			children = (
 				4A32B0981C57DAEE00BB7567 /* Cells */,
 				4A32B08E1C57D80D00BB7567 /* MasterViewController.xib */,
+				4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -132,6 +139,15 @@
 				4A32B0951C57DAD400BB7567 /* EventCollectionViewCell.xib */,
 			);
 			name = "Event CollectionView Cell";
+			sourceTree = "<group>";
+		};
+		4A32B09F1C57DCF400BB7567 /* Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A32B09A1C57DCEF00BB7567 /* DetailViewController.h */,
+				4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */,
+			);
+			name = "Detail View Controller";
 			sourceTree = "<group>";
 		};
 		6E8E57C0C531181921E2B199 /* Pods */ = {
@@ -213,6 +229,7 @@
 			files = (
 				4A1D612E1C57D1FA004D5524 /* LaunchScreen.storyboard in Resources */,
 				4A32B0971C57DAD400BB7567 /* EventCollectionViewCell.xib in Resources */,
+				4A32B09E1C57DCEF00BB7567 /* DetailViewController.xib in Resources */,
 				4A1D612B1C57D1FA004D5524 /* Assets.xcassets in Resources */,
 				4A32B0901C57D80D00BB7567 /* MasterViewController.xib in Resources */,
 			);
@@ -273,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A32B09D1C57DCEF00BB7567 /* DetailViewController.m in Sources */,
 				4A1D61231C57D1FA004D5524 /* AppDelegate.m in Sources */,
 				4A32B0961C57DAD400BB7567 /* EventCollectionViewCell.m in Sources */,
 				4A32B08F1C57D80D00BB7567 /* MasterViewController.m in Sources */,

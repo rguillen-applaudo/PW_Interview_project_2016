@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "EventCollectionViewCell.h"
+#import "DetailViewController.h"
 
 @interface MasterViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -53,7 +54,8 @@
 #pragma mark - CollectionView Delegate
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    // Open detail view
+    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]];
+    [[self navigationController] pushViewController:detailViewController animated:YES];
 }
 
 @end
