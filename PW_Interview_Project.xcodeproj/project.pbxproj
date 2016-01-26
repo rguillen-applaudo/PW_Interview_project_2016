@@ -23,6 +23,8 @@
 		4A32B0AB1C58014D00BB7567 /* EventItemTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0A91C58014D00BB7567 /* EventItemTitleTableViewCell.xib */; };
 		4A32B0AF1C58016500BB7567 /* EventItemDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0AD1C58016500BB7567 /* EventItemDescriptionTableViewCell.m */; };
 		4A32B0B01C58016500BB7567 /* EventItemDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0AE1C58016500BB7567 /* EventItemDescriptionTableViewCell.xib */; };
+		4A87B84C1C58163200F09EF6 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A87B84B1C58163200F09EF6 /* NetworkManager.m */; };
+		4A87B8501C581E9E00F09EF6 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A87B84F1C581E9E00F09EF6 /* EventModel.m */; };
 		F855F626A1C34956318583CF /* libPods-PW_Interview_Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,10 @@
 		4A32B0AC1C58016500BB7567 /* EventItemDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItemDescriptionTableViewCell.h; sourceTree = "<group>"; };
 		4A32B0AD1C58016500BB7567 /* EventItemDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventItemDescriptionTableViewCell.m; sourceTree = "<group>"; };
 		4A32B0AE1C58016500BB7567 /* EventItemDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventItemDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		4A87B84A1C58163200F09EF6 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		4A87B84B1C58163200F09EF6 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		4A87B84E1C581E9E00F09EF6 /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventModel.h; sourceTree = "<group>"; };
+		4A87B84F1C581E9E00F09EF6 /* EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventModel.m; sourceTree = "<group>"; };
 		73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +99,8 @@
 		4A1D611D1C57D1FA004D5524 /* PW_Interview_Project */ = {
 			isa = PBXGroup;
 			children = (
+				4A87B8491C58162900F09EF6 /* Network */,
+				4A87B84D1C581E5C00F09EF6 /* Models */,
 				4A32B0921C57D81C00BB7567 /* Views */,
 				4A32B08B1C57D7C600BB7567 /* Controllers */,
 				4A1D612A1C57D1FA004D5524 /* Assets.xcassets */,
@@ -182,6 +190,24 @@
 				4A32B0AE1C58016500BB7567 /* EventItemDescriptionTableViewCell.xib */,
 			);
 			name = "Event Items Cells";
+			sourceTree = "<group>";
+		};
+		4A87B8491C58162900F09EF6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4A87B84A1C58163200F09EF6 /* NetworkManager.h */,
+				4A87B84B1C58163200F09EF6 /* NetworkManager.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		4A87B84D1C581E5C00F09EF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A87B84E1C581E9E00F09EF6 /* EventModel.h */,
+				4A87B84F1C581E9E00F09EF6 /* EventModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		6E8E57C0C531181921E2B199 /* Pods */ = {
@@ -329,11 +355,13 @@
 			files = (
 				4A32B0A51C57FFE300BB7567 /* EventItemTimestampTableViewCell.m in Sources */,
 				4A32B09D1C57DCEF00BB7567 /* DetailViewController.m in Sources */,
+				4A87B8501C581E9E00F09EF6 /* EventModel.m in Sources */,
 				4A1D61231C57D1FA004D5524 /* AppDelegate.m in Sources */,
 				4A32B0961C57DAD400BB7567 /* EventCollectionViewCell.m in Sources */,
 				4A32B08F1C57D80D00BB7567 /* MasterViewController.m in Sources */,
 				4A1D61201C57D1FA004D5524 /* main.m in Sources */,
 				4A32B0AF1C58016500BB7567 /* EventItemDescriptionTableViewCell.m in Sources */,
+				4A87B84C1C58163200F09EF6 /* NetworkManager.m in Sources */,
 				4A32B0AA1C58014D00BB7567 /* EventItemTitleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
