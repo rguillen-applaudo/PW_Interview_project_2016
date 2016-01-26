@@ -17,6 +17,12 @@
 		4A32B0971C57DAD400BB7567 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0951C57DAD400BB7567 /* EventCollectionViewCell.xib */; };
 		4A32B09D1C57DCEF00BB7567 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */; };
 		4A32B09E1C57DCEF00BB7567 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */; };
+		4A32B0A51C57FFE300BB7567 /* EventItemTimestampTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0A31C57FFE300BB7567 /* EventItemTimestampTableViewCell.m */; };
+		4A32B0A61C57FFE300BB7567 /* EventItemTimestampTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0A41C57FFE300BB7567 /* EventItemTimestampTableViewCell.xib */; };
+		4A32B0AA1C58014D00BB7567 /* EventItemTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0A81C58014D00BB7567 /* EventItemTitleTableViewCell.m */; };
+		4A32B0AB1C58014D00BB7567 /* EventItemTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0A91C58014D00BB7567 /* EventItemTitleTableViewCell.xib */; };
+		4A32B0AF1C58016500BB7567 /* EventItemDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0AD1C58016500BB7567 /* EventItemDescriptionTableViewCell.m */; };
+		4A32B0B01C58016500BB7567 /* EventItemDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0AE1C58016500BB7567 /* EventItemDescriptionTableViewCell.xib */; };
 		F855F626A1C34956318583CF /* libPods-PW_Interview_Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +45,15 @@
 		4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		4A32B0A01C57E2BF00BB7567 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4A32B0A21C57FFE300BB7567 /* EventItemTimestampTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItemTimestampTableViewCell.h; sourceTree = "<group>"; };
+		4A32B0A31C57FFE300BB7567 /* EventItemTimestampTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventItemTimestampTableViewCell.m; sourceTree = "<group>"; };
+		4A32B0A41C57FFE300BB7567 /* EventItemTimestampTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventItemTimestampTableViewCell.xib; sourceTree = "<group>"; };
+		4A32B0A71C58014D00BB7567 /* EventItemTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItemTitleTableViewCell.h; sourceTree = "<group>"; };
+		4A32B0A81C58014D00BB7567 /* EventItemTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventItemTitleTableViewCell.m; sourceTree = "<group>"; };
+		4A32B0A91C58014D00BB7567 /* EventItemTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventItemTitleTableViewCell.xib; sourceTree = "<group>"; };
+		4A32B0AC1C58016500BB7567 /* EventItemDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventItemDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		4A32B0AD1C58016500BB7567 /* EventItemDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventItemDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		4A32B0AE1C58016500BB7567 /* EventItemDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventItemDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +143,7 @@
 		4A32B0981C57DAEE00BB7567 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4A32B0A11C57FFBB00BB7567 /* Event Items Cells */,
 				4A32B0991C57DB0B00BB7567 /* Event CollectionView Cell */,
 			);
 			name = Cells;
@@ -150,6 +166,22 @@
 				4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */,
 			);
 			name = "Detail View Controller";
+			sourceTree = "<group>";
+		};
+		4A32B0A11C57FFBB00BB7567 /* Event Items Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A32B0A21C57FFE300BB7567 /* EventItemTimestampTableViewCell.h */,
+				4A32B0A31C57FFE300BB7567 /* EventItemTimestampTableViewCell.m */,
+				4A32B0A41C57FFE300BB7567 /* EventItemTimestampTableViewCell.xib */,
+				4A32B0A71C58014D00BB7567 /* EventItemTitleTableViewCell.h */,
+				4A32B0A81C58014D00BB7567 /* EventItemTitleTableViewCell.m */,
+				4A32B0A91C58014D00BB7567 /* EventItemTitleTableViewCell.xib */,
+				4A32B0AC1C58016500BB7567 /* EventItemDescriptionTableViewCell.h */,
+				4A32B0AD1C58016500BB7567 /* EventItemDescriptionTableViewCell.m */,
+				4A32B0AE1C58016500BB7567 /* EventItemDescriptionTableViewCell.xib */,
+			);
+			name = "Event Items Cells";
 			sourceTree = "<group>";
 		};
 		6E8E57C0C531181921E2B199 /* Pods */ = {
@@ -233,6 +265,9 @@
 				4A32B0971C57DAD400BB7567 /* EventCollectionViewCell.xib in Resources */,
 				4A32B09E1C57DCEF00BB7567 /* DetailViewController.xib in Resources */,
 				4A1D612B1C57D1FA004D5524 /* Assets.xcassets in Resources */,
+				4A32B0A61C57FFE300BB7567 /* EventItemTimestampTableViewCell.xib in Resources */,
+				4A32B0AB1C58014D00BB7567 /* EventItemTitleTableViewCell.xib in Resources */,
+				4A32B0B01C58016500BB7567 /* EventItemDescriptionTableViewCell.xib in Resources */,
 				4A32B0901C57D80D00BB7567 /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,11 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A32B0A51C57FFE300BB7567 /* EventItemTimestampTableViewCell.m in Sources */,
 				4A32B09D1C57DCEF00BB7567 /* DetailViewController.m in Sources */,
 				4A1D61231C57D1FA004D5524 /* AppDelegate.m in Sources */,
 				4A32B0961C57DAD400BB7567 /* EventCollectionViewCell.m in Sources */,
 				4A32B08F1C57D80D00BB7567 /* MasterViewController.m in Sources */,
 				4A1D61201C57D1FA004D5524 /* main.m in Sources */,
+				4A32B0AF1C58016500BB7567 /* EventItemDescriptionTableViewCell.m in Sources */,
+				4A32B0AA1C58014D00BB7567 /* EventItemTitleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
