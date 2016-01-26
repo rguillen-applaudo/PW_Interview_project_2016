@@ -186,7 +186,7 @@
     if (offsetY > 0)
     {
         CGRect currentFrame = self.eventDetailBackgroundImage.frame;
-        CGRect newFrame = CGRectMake(currentFrame.origin.x, self.originalYPosition - (offsetY / 3), currentFrame.size.width, currentFrame.size.height);
+        CGRect newFrame = CGRectMake(currentFrame.origin.x, self.originalYPosition - (offsetY / 3), currentFrame.size.width, 250);
         self.eventDetailBackgroundImage.frame = newFrame;
     }
     else
