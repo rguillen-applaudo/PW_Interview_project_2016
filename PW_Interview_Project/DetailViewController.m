@@ -117,8 +117,8 @@
                                                          forBarMetrics:UIBarMetricsDefault];
     
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-                                                                                 target:self.navigationController
-                                                                                 action:@selector(popViewControllerAnimated:)];
+                                                                                 target:self
+                                                                                 action:@selector(shareEvent:)];
     self.navigationItem.rightBarButtonItem = shareButton;
     
     [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
@@ -195,6 +195,30 @@
         CGRect newFrame = CGRectMake(currentFrame.origin.x, 0, currentFrame.size.width, 250 - offsetY);
         self.eventDetailBackgroundImage.frame = newFrame;
     }
+}
+
+#pragma mark - Sharing
+
+-(void)shareEvent:(id)sender{
+    [self shareText:self.event.titleSTR andImage:self.eventDetailBackgroundImage.image andUrl:nil];
+}
+
+- (void)shareText:(NSString *)text andImage:(UIImage *)image andUrl:(NSURL *)url
+{
+    NSMutableArray *sharingItems = [NSMutableArray new];
+    
+    if (text) {
+        [sharingItems addObject:text];
+    }
+    if (image) {
+        [sharingItems addObject:image];
+    }
+    if (url) {
+        [sharingItems addObject:url];
+    }
+    
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:sharingItems applicationActivities:nil];
+    [self presentViewController:activityController animated:YES completion:nil];
 }
 
 @end
