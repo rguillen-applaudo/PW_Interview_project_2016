@@ -61,7 +61,6 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     RGEventModel *event = [self.eventsArray objectAtIndex:indexPath.row];
-    NSLog(@"event %@", event);
     RGEventCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"RGEventCollectionViewCell" forIndexPath:indexPath];
     
     [cell.backgroundImage sd_setImageWithURL:[NSURL URLWithString:event.eventImage]
