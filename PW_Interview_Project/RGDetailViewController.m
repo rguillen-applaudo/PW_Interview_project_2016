@@ -6,7 +6,7 @@
 //  Copyright © 2016 Applaudo Studios. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "RGDetailViewController.h"
 #import "RGEventItemTimestampTableViewCell.h"
 #import "RGEventItemTitleTableViewCell.h"
 #import "RGEventItemDescriptionTableViewCell.h"
@@ -15,12 +15,12 @@
 #import "UINavigationBar+Awesome.h"
 #define NAVBAR_CHANGE_POINT 100
 
-@interface DetailViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface RGDetailViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *eventItems;
 @property (nonatomic, assign) float originalYPosition;
 @end
 
-@implementation DetailViewController
+@implementation RGDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

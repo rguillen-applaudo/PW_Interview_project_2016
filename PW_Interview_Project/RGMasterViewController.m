@@ -8,7 +8,7 @@
 
 #import "RGMasterViewController.h"
 #import "RGEventCollectionViewCell.h"
-#import "DetailViewController.h"
+#import "RGDetailViewController.h"
 #import "RGNetworkManager.h"
 #import "MBProgressHUD.h"
 #import "RGEventModel.h"
@@ -80,7 +80,7 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     RGEventModel *event = [self.eventsArray objectAtIndex:indexPath.row];
-    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]];
+    RGDetailViewController *detailViewController = [[RGDetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]];
     detailViewController.event = event;
     [[self navigationController] pushViewController:detailViewController animated:YES];
 }

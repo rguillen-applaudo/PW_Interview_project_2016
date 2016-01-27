@@ -15,8 +15,8 @@
 		4A32B0901C57D80D00BB7567 /* RGMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B08E1C57D80D00BB7567 /* RGMasterViewController.xib */; };
 		4A32B0961C57DAD400BB7567 /* RGEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0941C57DAD400BB7567 /* RGEventCollectionViewCell.m */; };
 		4A32B0971C57DAD400BB7567 /* RGEventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0951C57DAD400BB7567 /* RGEventCollectionViewCell.xib */; };
-		4A32B09D1C57DCEF00BB7567 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */; };
-		4A32B09E1C57DCEF00BB7567 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */; };
+		4A32B09D1C57DCEF00BB7567 /* RGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B09B1C57DCEF00BB7567 /* RGDetailViewController.m */; };
+		4A32B09E1C57DCEF00BB7567 /* RGDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B09C1C57DCEF00BB7567 /* RGDetailViewController.xib */; };
 		4A32B0A51C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0A31C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m */; };
 		4A32B0A61C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0A41C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.xib */; };
 		4A32B0AA1C58014D00BB7567 /* RGEventItemTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0A81C58014D00BB7567 /* RGEventItemTitleTableViewCell.m */; };
@@ -44,9 +44,9 @@
 		4A32B0931C57DAD400BB7567 /* RGEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventCollectionViewCell.h; sourceTree = "<group>"; };
 		4A32B0941C57DAD400BB7567 /* RGEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventCollectionViewCell.m; sourceTree = "<group>"; };
 		4A32B0951C57DAD400BB7567 /* RGEventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventCollectionViewCell.xib; sourceTree = "<group>"; };
-		4A32B09A1C57DCEF00BB7567 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		4A32B09A1C57DCEF00BB7567 /* RGDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDetailViewController.h; sourceTree = "<group>"; };
+		4A32B09B1C57DCEF00BB7567 /* RGDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDetailViewController.m; sourceTree = "<group>"; };
+		4A32B09C1C57DCEF00BB7567 /* RGDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGDetailViewController.xib; sourceTree = "<group>"; };
 		4A32B0A01C57E2BF00BB7567 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4A32B0A21C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventItemTimestampTableViewCell.h; sourceTree = "<group>"; };
 		4A32B0A31C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventItemTimestampTableViewCell.m; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			children = (
 				4A32B0981C57DAEE00BB7567 /* Cells */,
 				4A32B08E1C57D80D00BB7567 /* RGMasterViewController.xib */,
-				4A32B09C1C57DCEF00BB7567 /* DetailViewController.xib */,
+				4A32B09C1C57DCEF00BB7567 /* RGDetailViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -173,8 +173,8 @@
 		4A32B09F1C57DCF400BB7567 /* Detail View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4A32B09A1C57DCEF00BB7567 /* DetailViewController.h */,
-				4A32B09B1C57DCEF00BB7567 /* DetailViewController.m */,
+				4A32B09A1C57DCEF00BB7567 /* RGDetailViewController.h */,
+				4A32B09B1C57DCEF00BB7567 /* RGDetailViewController.m */,
 			);
 			name = "Detail View Controller";
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			files = (
 				4A1D612E1C57D1FA004D5524 /* LaunchScreen.storyboard in Resources */,
 				4A32B0971C57DAD400BB7567 /* RGEventCollectionViewCell.xib in Resources */,
-				4A32B09E1C57DCEF00BB7567 /* DetailViewController.xib in Resources */,
+				4A32B09E1C57DCEF00BB7567 /* RGDetailViewController.xib in Resources */,
 				4A1D612B1C57D1FA004D5524 /* Assets.xcassets in Resources */,
 				4A32B0A61C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.xib in Resources */,
 				4A32B0AB1C58014D00BB7567 /* RGEventItemTitleTableViewCell.xib in Resources */,
@@ -375,7 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A32B0A51C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m in Sources */,
-				4A32B09D1C57DCEF00BB7567 /* DetailViewController.m in Sources */,
+				4A32B09D1C57DCEF00BB7567 /* RGDetailViewController.m in Sources */,
 				4A87B8501C581E9E00F09EF6 /* RGEventModel.m in Sources */,
 				4A1D61231C57D1FA004D5524 /* AppDelegate.m in Sources */,
 				4A32B0961C57DAD400BB7567 /* RGEventCollectionViewCell.m in Sources */,

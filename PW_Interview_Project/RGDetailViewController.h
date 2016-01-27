@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RGEventModel.h"
 
-@interface DetailViewController : UIViewController
+@interface RGDetailViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *eventDetailBackgroundImage;
 @property (strong, nonatomic) IBOutlet UITableView *eventDetailTableView;
