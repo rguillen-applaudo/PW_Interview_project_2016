@@ -6,5 +6,6 @@ target 'PW_Interview_Project' do
 	pod 'LTNavigationBar', '~> 2.1'
 	pod 'MBProgressHUD', '~> 0.9'
 	pod 'SDWebImage', '~> 3.7'
+	pod 'Reachability', '~> 3.2'
 end
 

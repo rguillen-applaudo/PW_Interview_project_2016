@@ -13,7 +13,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 
 #import "UINavigationBar+Awesome.h"
-#define NAVBAR_CHANGE_POINT 100
+#define NAVBAR_CHANGE_POINT 50
 
 @interface RGDetailViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *eventItems;
@@ -176,6 +176,12 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     // Nav bar changes
+    CATransition *fadeTextAnimation = [CATransition animation];
+    fadeTextAnimation.duration = 0.5;
+    fadeTextAnimation.type = kCATransitionFade;
+    
+    [self.navigationController.navigationBar.layer addAnimation:fadeTextAnimation forKey:@"fadeText"];
+    
     UIColor * color = [UIColor whiteColor];
     CGFloat offsetY = scrollView.contentOffset.y;
     if (offsetY > NAVBAR_CHANGE_POINT) {
