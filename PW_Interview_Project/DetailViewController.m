@@ -127,6 +127,7 @@
 #pragma mark - TableView Confirugation
 
 -(void)configureDetailTableView{
+    
     [self.eventDetailTableView setBackgroundColor:[UIColor clearColor]];
     [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemTimestampTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemTimeStampCell"];
     [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemTitleTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemTitleCell"];

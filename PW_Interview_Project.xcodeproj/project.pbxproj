@@ -102,8 +102,7 @@
 		4A1D611D1C57D1FA004D5524 /* PW_Interview_Project */ = {
 			isa = PBXGroup;
 			children = (
-				4A87B8511C5826DE00F09EF6 /* Date Formatter */,
-				4A87B8491C58162900F09EF6 /* Network */,
+				4A87B8551C583DCA00F09EF6 /* Utils */,
 				4A87B84D1C581E5C00F09EF6 /* Models */,
 				4A32B0921C57D81C00BB7567 /* Views */,
 				4A32B08B1C57D7C600BB7567 /* Controllers */,
@@ -221,6 +220,15 @@
 				4A87B8531C5826EC00F09EF6 /* DateFormatter.m */,
 			);
 			name = "Date Formatter";
+			sourceTree = "<group>";
+		};
+		4A87B8551C583DCA00F09EF6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4A87B8511C5826DE00F09EF6 /* Date Formatter */,
+				4A87B8491C58162900F09EF6 /* Network */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		6E8E57C0C531181921E2B199 /* Pods */ = {
@@ -487,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applaudostudios.PW-Interview-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -501,6 +510,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applaudostudios.PW-Interview-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
