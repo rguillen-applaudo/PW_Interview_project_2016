@@ -11,6 +11,8 @@
 
 @implementation RGEventModel
 
+
+// keyMapper is a method implemented by JSONModel to map JSON Keys to Model properties
 +(JSONKeyMapper*)keyMapper
 {
     return [[JSONKeyMapper alloc] initWithDictionary:@{
@@ -25,11 +27,15 @@
                                                        }];
 }
 
+// formattedTimestamp this is a getter method to retun a human readable string from timestamp property using RGDateFormatter Class methods
 -(NSString *)formattedTimestamp{
     NSString *stringFromDate = [[RGDateFormatter alloc] formattedStringForTimeStamp:self.timestampSTR];
     return stringFromDate;
 }
 
+// truncatedDescription returns a short description of the event to use on the main events list (grid)
+// This method evaluates is the string for description is grather than 100 charactes
+// if the string length is grather than 100 it truncates the string to return a shorter description
 -(NSString *)truncatedDescription{
     NSRange stringRange = {0,100};
     NSString *myString = self.descriptionSTR;

@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface RGNetworkManager : NSObject
-
--(RGNetworkManager *)startNetworkManager;
 -(void)requestDataFromURL:(NSString *)stringURL success:(void (^)(id responseObject))successCompletionHandler error:(void (^)(NSError *error))errorCompletionHandler;
 -(BOOL)networkManagerConnected;
 @end

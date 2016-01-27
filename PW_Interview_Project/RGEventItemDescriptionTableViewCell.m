@@ -20,6 +20,7 @@
     // Configure the view for the selected state
 }
 
+// Custom implementation on setFrame to return a fixed cell widht on iPad
 - (void) setFrame:(CGRect)frame {
     if (IS_IPAD) {
         CGRect newFrame = frame;

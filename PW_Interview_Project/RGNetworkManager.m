@@ -12,22 +12,20 @@
 
 @implementation RGNetworkManager
 
--(RGNetworkManager *)startNetworkManager{
-    return self;
-}
-
+// requestDataFromURL takes as a parameter a stringURL to perform a get request to this URL
+// the method has two different completion blocks: Success and Error
+// Once the get request is made the method evaluates the response and executes the corresponding completon block for success or error.
 -(void)requestDataFromURL:(NSString *)stringURL success:(void (^)(id))successCompletionHandler error:(void (^)(NSError *))errorCompletionHandler{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/plain"];
     [manager GET:stringURL parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-//        NSLog(@"JSON: %@", responseObject);
         successCompletionHandler(responseObject);
     } failure:^(NSURLSessionTask *operation, NSError *error) {
-//        NSLog(@"Error: %@", error);
         errorCompletionHandler(error);
     }];
 }
 
+// networkManagerConnected uses reachability library to check if the internet connection is available or not
 -(BOOL)networkManagerConnected{
     Reachability *reachability = [Reachability reachabilityForInternetConnection];
     NetworkStatus networkStatus = [reachability currentReachabilityStatus];

@@ -10,6 +10,7 @@
 
 @implementation RGDateFormatter
 
+// formattedStringForTimeStamp takes a GMT string as an input and returns a human readable date as NSString
 -(NSString *)formattedStringForTimeStamp:(NSString *)timestamp{
     if (timestamp && timestamp.length > 0) {
         NSDateFormatter *dateFormatterGMT = [[NSDateFormatter alloc] init];

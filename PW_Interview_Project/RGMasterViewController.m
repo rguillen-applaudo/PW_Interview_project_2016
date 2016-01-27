@@ -29,7 +29,7 @@
     self.title = @"PHUN APP";
     [self.eventsCollectionView registerNib:[UINib nibWithNibName:@"RGEventCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"RGEventCollectionViewCell"];
     [self.eventsCollectionView setBackgroundColor:[UIColor clearColor]];
-    self.networkManager = [[RGNetworkManager alloc] startNetworkManager];
+    self.networkManager = [[RGNetworkManager alloc] init];
     [self requestEventsFromAPI];
 }
 
@@ -41,9 +41,7 @@
             RGEventCollectionViewCell *cell = (RGEventCollectionViewCell *)[self.eventsCollectionView cellForItemAtIndexPath:indexPath];
             [cell setNeedsDisplay];
         }
-    } completion:^(BOOL completed){
-        //
-    }];
+    } completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -97,18 +95,18 @@
 
 #pragma mark - Request Events from API
 
+// requestEventsFromAPI uses NetworkManager class instance to check internet connection and then request JSON data from API_URL
+// This methos uses JSONModel to parse JSON Response to RGEventModel that's being used on to populate the info on the events list
 -(void)requestEventsFromAPI{
     if (self.networkManager.networkManagerConnected) {
-        NSLog(@"Connected");
         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         [self.networkManager requestDataFromURL:API_URL success:^(id responseObject){
-            NSLog(@"funciona");
             NSArray *jsonArray = [NSArray arrayWithArray:responseObject];
             self.eventsArray = [[NSMutableArray alloc] initWithCapacity:0];
             for (id item in jsonArray) {
                 NSError* err = nil;
                 RGEventModel* event = [[RGEventModel alloc] initWithDictionary:item error:&err];
-                NSLog(@"ERROR %@", err.localizedDescription);
                 [self.eventsArray addObject:event];
             }
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -117,7 +115,6 @@
                 [self.eventsCollectionView reloadData];
             });
         } error:^(NSError *error){
-            NSLog(@"no funciona");
             dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -127,7 +124,6 @@
         }];
     }
     else{
-        NSLog(@"NOT CONNECTED");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network connection" message:@"Network not available" delegate:self cancelButtonTitle:@"Retry" otherButtonTitles:nil];
         [alert show];
     }
