@@ -71,7 +71,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *eventItem = [self.eventItems objectAtIndex:indexPath.row];
-    if ([[eventItem valueForKey:@"item"] isEqualToString:@"timestamp"]) {
+    if ([[eventItem valueForKey:@"item"] isEqualToString:@"eventTimestamp"]) {
         RGEventItemTimestampTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RGEventItemTimeStampCell"];
         if (cell == nil) {
             cell = [[RGEventItemTimestampTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
@@ -81,7 +81,7 @@
         cell.cellTextLabel.text = [eventItem valueForKey:@"text"];
         return cell;
     }
-    else if ([[eventItem valueForKey:@"item"] isEqualToString:@"title"]){
+    else if ([[eventItem valueForKey:@"item"] isEqualToString:@"eventTitle"]){
         RGEventItemTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RGEventItemTitleCell"];
         if (cell == nil) {
             cell = [[RGEventItemTitleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
@@ -91,7 +91,7 @@
         cell.cellTextLabel.text = [eventItem valueForKey:@"text"];
         return cell;
     }
-    else if ([[eventItem valueForKey:@"item"] isEqualToString:@"description"]){
+    else if ([[eventItem valueForKey:@"item"] isEqualToString:@"eventDescription"]){
         RGEventItemDescriptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RGEventItemDescriptionCell"];
         if (cell == nil) {
             cell = [[RGEventItemDescriptionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
@@ -166,20 +166,20 @@
 #pragma mark - Configure Event Items
 
 -(void)configureEventItems{
-    [self.eventDetailBackgroundImage sd_setImageWithURL:[NSURL URLWithString:self.event.imageSTR]
+    [self.eventDetailBackgroundImage sd_setImageWithURL:[NSURL URLWithString:self.event.eventImage]
                             placeholderImage:[UIImage imageNamed:@"placeholder"]];
     self.eventItems = @[
                         @{
-                            @"item" : @"timestamp",
+                            @"item" : @"eventTimestamp",
                             @"text" : self.event.formattedTimestamp
                             },
                         @{
-                            @"item" : @"title",
-                            @"text" : self.event.titleSTR
+                            @"item" : @"eventTitle",
+                            @"text" : self.event.eventTitle
                             },
                         @{
-                            @"item" : @"description",
-                            @"text" : self.event.descriptionSTR
+                            @"item" : @"eventDescription",
+                            @"text" : self.event.eventDescription
                             }
                         ];
 }
@@ -239,7 +239,7 @@
 #pragma mark - Sharing
 
 -(void)shareEvent:(id)sender{
-    [self shareText:self.event.titleSTR andImage:self.eventDetailBackgroundImage.image andUrl:nil];
+    [self shareText:self.event.eventTitle andImage:self.eventDetailBackgroundImage.image andUrl:nil];
 }
 
 - (void)shareText:(NSString *)text andImage:(UIImage *)image andUrl:(NSURL *)url

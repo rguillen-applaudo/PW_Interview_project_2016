@@ -16,20 +16,20 @@
 +(JSONKeyMapper*)keyMapper
 {
     return [[JSONKeyMapper alloc] initWithDictionary:@{
-                                                       @"description": @"descriptionSTR",
-                                                       @"title": @"titleSTR",
-                                                       @"timestamp": @"timestampSTR",
-                                                       @"image": @"imageSTR",
-                                                       @"phone": @"phoneSTR",
-                                                       @"date": @"dateSTR",
-                                                       @"locationline1": @"locationline1STR",
-                                                       @"locationline2": @"locationline2STR",
+                                                       @"description": @"eventDescription",
+                                                       @"title": @"eventTitle",
+                                                       @"timestamp": @"eventTimestamp",
+                                                       @"image": @"eventImage",
+                                                       @"phone": @"eventPhone",
+                                                       @"date": @"eventDate",
+                                                       @"locationline1": @"eventLocationLine1",
+                                                       @"locationline2": @"eventLocationLine2",
                                                        }];
 }
 
 // formattedTimestamp this is a getter method to retun a human readable string from timestamp property using RGDateFormatter Class methods
 -(NSString *)formattedTimestamp{
-    NSString *stringFromDate = [[RGDateFormatter alloc] formattedStringForTimeStamp:self.timestampSTR];
+    NSString *stringFromDate = [[RGDateFormatter alloc] formattedStringForTimeStamp:self.eventTimestamp];
     return stringFromDate;
 }
 
@@ -38,7 +38,7 @@
 // if the string length is grather than 100 it truncates the string to return a shorter description
 -(NSString *)truncatedDescription{
     NSRange stringRange = {0,100};
-    NSString *myString = self.descriptionSTR;
+    NSString *myString = self.eventDescription;
     if (myString.length > 100) {
         NSString *shortString = [myString substringWithRange:stringRange];
         return shortString;

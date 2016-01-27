@@ -9,14 +9,14 @@
 #import <JSONModel/JSONModel.h>
 
 @interface RGEventModel : JSONModel
-@property (strong, nonatomic) NSString *descriptionSTR;
-@property (strong, nonatomic) NSString *titleSTR;
-@property (strong, nonatomic) NSString *timestampSTR;
-@property (strong, nonatomic) NSString<Optional> *imageSTR;
-@property (strong, nonatomic) NSDate<Optional> *phoneSTR;
-@property (strong, nonatomic) NSDate *dateSTR;
-@property (strong, nonatomic) NSString *locationline1STR;
-@property (strong, nonatomic) NSString<Optional> *locationline2STR;
+@property (strong, nonatomic) NSString *eventDescription;
+@property (strong, nonatomic) NSString *eventTitle;
+@property (strong, nonatomic) NSString *eventTimestamp;
+@property (strong, nonatomic) NSString<Optional> *eventImage;
+@property (strong, nonatomic) NSDate<Optional> *eventPhone;
+@property (strong, nonatomic) NSDate *eventDate;
+@property (strong, nonatomic) NSString *eventLocationLine1;
+@property (strong, nonatomic) NSString<Optional> *eventLocationLine2;
 
 -(NSString *)formattedTimestamp;
 -(NSString *)truncatedDescription;

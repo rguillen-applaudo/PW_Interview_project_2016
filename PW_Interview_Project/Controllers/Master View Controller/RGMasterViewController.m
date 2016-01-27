@@ -64,12 +64,12 @@
     NSLog(@"event %@", event);
     RGEventCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"RGEventCollectionViewCell" forIndexPath:indexPath];
     
-    [cell.backgroundImage sd_setImageWithURL:[NSURL URLWithString:event.imageSTR]
+    [cell.backgroundImage sd_setImageWithURL:[NSURL URLWithString:event.eventImage]
                       placeholderImage:[UIImage imageNamed:@"placeholder"]];
     cell.timestampLabel.text = event.formattedTimestamp;
-    cell.titleLabel.text = event.titleSTR;
+    cell.titleLabel.text = event.eventTitle;
     cell.descriptionLabel.text = event.truncatedDescription;
-    cell.subtitleLabel.text = event.locationline1STR;
+    cell.subtitleLabel.text = event.eventLocationLine1;
     [cell setNeedsDisplay];
     return cell;
 }
