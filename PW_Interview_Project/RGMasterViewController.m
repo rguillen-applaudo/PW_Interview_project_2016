@@ -35,7 +35,15 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self.eventsCollectionView performBatchUpdates:nil completion:nil];
+    [self.eventsCollectionView performBatchUpdates:^(){
+        NSArray *visbleCellPaths = [self.eventsCollectionView indexPathsForVisibleItems];
+        for (NSIndexPath *indexPath in visbleCellPaths) {
+            RGEventCollectionViewCell *cell = (RGEventCollectionViewCell *)[self.eventsCollectionView cellForItemAtIndexPath:indexPath];
+            [cell setNeedsDisplay];
+        }
+    } completion:^(BOOL completed){
+        //
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,6 +72,7 @@
     cell.titleLabel.text = event.titleSTR;
     cell.descriptionLabel.text = event.truncatedDescription;
     cell.subtitleLabel.text = event.locationline1STR;
+    [cell setNeedsDisplay];
     return cell;
 }
 

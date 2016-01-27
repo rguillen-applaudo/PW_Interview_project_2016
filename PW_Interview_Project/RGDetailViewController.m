@@ -18,6 +18,7 @@
 @interface RGDetailViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *eventItems;
 @property (nonatomic, assign) float originalYPosition;
+@property (nonatomic, strong) UIView *partialBackgroundView;
 @end
 
 @implementation RGDetailViewController
@@ -148,6 +149,18 @@
     [gradientView.layer insertSublayer:gradient atIndex:0];
     
     [self.eventDetailTableView setTableHeaderView:gradientView];
+    
+    // Create the UIView that will become the tableView backgroundView
+    UIView *tableViewBackground = [[UIView alloc] initWithFrame:self.eventDetailTableView.frame];
+    tableViewBackground.backgroundColor = [UIColor clearColor];
+    
+    // Create the opaque backgroundView and set the frame so that it starts below the headerView
+    self.partialBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 250.0f, self.view.bounds.size.width, self.view.bounds.size.height - 250.0f)];
+    self.partialBackgroundView.backgroundColor = [UIColor whiteColor];
+    
+    // Add the partial background to the main background view and apply it to the tableView
+    [tableViewBackground addSubview:self.partialBackgroundView];
+    self.eventDetailTableView.backgroundView = tableViewBackground;
 }
 
 #pragma mark - Configure Event Items
@@ -202,15 +215,25 @@
     if (offsetY > 0)
     {
         CGRect currentFrame = self.eventDetailBackgroundImage.frame;
-        CGRect newFrame = CGRectMake(currentFrame.origin.x, self.originalYPosition - (offsetY / 3), currentFrame.size.width, 250);
+        CGRect newFrame = CGRectMake(currentFrame.origin.x, self.originalYPosition - (offsetY / 2), currentFrame.size.width, 250);
         self.eventDetailBackgroundImage.frame = newFrame;
+        
+        
+        CGRect currentFramePartialBG = self.partialBackgroundView.frame;
+        CGRect newFramePartialBG = CGRectMake(currentFramePartialBG.origin.x, self.originalYPosition + 250 - offsetY, currentFramePartialBG.size.width, currentFramePartialBG.size.height);
+        self.partialBackgroundView.frame = newFramePartialBG;
     }
     else
     {
         CGRect currentFrame = self.eventDetailBackgroundImage.frame;
         CGRect newFrame = CGRectMake(currentFrame.origin.x, 0, currentFrame.size.width, 250 - offsetY);
         self.eventDetailBackgroundImage.frame = newFrame;
+        
+        CGRect currentFramePartialBG = self.partialBackgroundView.frame;
+        CGRect newFramePartialBG = CGRectMake(currentFramePartialBG.origin.x, self.originalYPosition + 250 - offsetY, currentFramePartialBG.size.width, currentFramePartialBG.size.height);
+        self.partialBackgroundView.frame = newFramePartialBG;
     }
+    
 }
 
 #pragma mark - Sharing
