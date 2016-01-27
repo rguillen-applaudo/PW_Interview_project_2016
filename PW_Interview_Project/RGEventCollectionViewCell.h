@@ -15,5 +15,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *subtitleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
-
+@property (nonatomic, strong) CAGradientLayer *gradientLayer;
 @end

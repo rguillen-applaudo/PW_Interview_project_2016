@@ -136,8 +136,14 @@
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
-    [self.eventsCollectionView performBatchUpdates:nil completion:^(BOOL completed){
-        [self.eventsCollectionView reloadItemsAtIndexPaths:[self.eventsCollectionView indexPathsForVisibleItems]];
+    [self.eventsCollectionView performBatchUpdates:^(){
+        NSArray *visbleCellPaths = [self.eventsCollectionView indexPathsForVisibleItems];
+        for (NSIndexPath *indexPath in visbleCellPaths) {
+            RGEventCollectionViewCell *cell = (RGEventCollectionViewCell *)[self.eventsCollectionView cellForItemAtIndexPath:indexPath];
+            [cell setNeedsDisplay];
+        }
+    } completion:^(BOOL completed){
+        //
     }];
 }
 

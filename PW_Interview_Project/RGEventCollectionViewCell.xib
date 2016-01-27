@@ -66,8 +66,10 @@
                 <constraint firstAttribute="bottom" secondItem="Z43-43-gLx" secondAttribute="bottom" id="IrH-e8-X4W"/>
                 <constraint firstAttribute="trailing" secondItem="klT-G7-b4f" secondAttribute="trailing" constant="8" id="LaS-CO-Rmi"/>
                 <constraint firstItem="ccx-hQ-dB8" firstAttribute="top" secondItem="klT-G7-b4f" secondAttribute="bottom" constant="2" id="Lyk-ys-eYd"/>
+                <constraint firstItem="2ka-uz-r4D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MtY-57-zdp"/>
                 <constraint firstItem="klT-G7-b4f" firstAttribute="top" secondItem="NaV-Gc-VhA" secondAttribute="bottom" constant="-1" id="PUs-qz-HgH"/>
                 <constraint firstItem="2ka-uz-r4D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="We7-Wx-g4a"/>
+                <constraint firstItem="2ka-uz-r4D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yec-3K-CIJ"/>
                 <constraint firstAttribute="trailing" secondItem="2ka-uz-r4D" secondAttribute="trailing" id="ZI0-Cf-532"/>
                 <constraint firstItem="SLr-Ys-rxu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="ZTR-jp-iVI"/>
                 <constraint firstAttribute="trailing" secondItem="SLr-Ys-rxu" secondAttribute="trailing" constant="8" id="ay8-Xd-sZU"/>
@@ -78,7 +80,9 @@
                 <constraint firstAttribute="bottom" secondItem="SLr-Ys-rxu" secondAttribute="bottom" constant="8" id="iuB-au-O2y"/>
                 <constraint firstItem="NaV-Gc-VhA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="kyl-mT-8Mn"/>
                 <constraint firstItem="klT-G7-b4f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="mOv-9F-exO"/>
+                <constraint firstAttribute="trailing" secondItem="2ka-uz-r4D" secondAttribute="trailing" id="oXM-py-uMf"/>
                 <constraint firstAttribute="trailing" secondItem="Z43-43-gLx" secondAttribute="trailing" id="pp2-AX-Nvu"/>
+                <constraint firstAttribute="bottom" secondItem="2ka-uz-r4D" secondAttribute="bottom" id="uzV-vG-rD8"/>
                 <constraint firstItem="SLr-Ys-rxu" firstAttribute="top" secondItem="ccx-hQ-dB8" secondAttribute="bottom" id="vtc-FG-FVf"/>
             </constraints>
             <connections>

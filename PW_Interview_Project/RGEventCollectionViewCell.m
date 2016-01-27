@@ -16,11 +16,12 @@
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = self.gradientView.bounds;
-    gradient.colors = [NSArray arrayWithObjects:(id)[[[UIColor blackColor] colorWithAlphaComponent:0.6] CGColor], (id)[[[UIColor whiteColor] colorWithAlphaComponent:0.6] CGColor], nil];
-    [self.gradientView.layer insertSublayer:gradient atIndex:0];
+    [self.gradientLayer removeFromSuperlayer];
+    self.gradientLayer = [CAGradientLayer layer];
+    self.gradientLayer.frame = self.gradientView.bounds;
+    self.gradientLayer.colors = [NSArray arrayWithObjects:(id)[[[UIColor blackColor] colorWithAlphaComponent:0.6] CGColor], (id)[[[UIColor whiteColor] colorWithAlphaComponent:0.6] CGColor], nil];
+    self.gradientView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.gradientView.layer insertSublayer:self.gradientLayer atIndex:0];
 }
 
 @end
