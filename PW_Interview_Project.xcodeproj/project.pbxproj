@@ -7,31 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1714161C5939AB00BD3DDC /* RGDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1714121C5939AB00BD3DDC /* RGDateFormatter.m */; };
+		4A1714171C5939AB00BD3DDC /* RGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1714151C5939AB00BD3DDC /* RGNetworkManager.m */; };
+		4A17141C1C5939F300BD3DDC /* RGEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A17141B1C5939F300BD3DDC /* RGEventModel.m */; };
+		4A1714241C593A4000BD3DDC /* RGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1714201C593A4000BD3DDC /* RGDetailViewController.m */; };
+		4A1714251C593A4000BD3DDC /* RGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1714231C593A4000BD3DDC /* RGMasterViewController.m */; };
+		4A1714381C593AC600BD3DDC /* RGEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A17142A1C593AC600BD3DDC /* RGEventCollectionViewCell.m */; };
+		4A1714391C593AC600BD3DDC /* RGEventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A17142B1C593AC600BD3DDC /* RGEventCollectionViewCell.xib */; };
+		4A17143A1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A17142E1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.m */; };
+		4A17143B1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A17142F1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.xib */; };
+		4A17143C1C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1714311C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.m */; };
+		4A17143D1C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1714321C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.xib */; };
+		4A17143E1C593AC600BD3DDC /* RGEventItemTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1714341C593AC600BD3DDC /* RGEventItemTitleTableViewCell.m */; };
+		4A17143F1C593AC600BD3DDC /* RGEventItemTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1714351C593AC600BD3DDC /* RGEventItemTitleTableViewCell.xib */; };
+		4A1714401C593AC600BD3DDC /* RGDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1714361C593AC600BD3DDC /* RGDetailViewController.xib */; };
+		4A1714411C593AC600BD3DDC /* RGMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1714371C593AC600BD3DDC /* RGMasterViewController.xib */; };
 		4A1D61201C57D1FA004D5524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D611F1C57D1FA004D5524 /* main.m */; };
 		4A1D61231C57D1FA004D5524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D61221C57D1FA004D5524 /* AppDelegate.m */; };
 		4A1D612B1C57D1FA004D5524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1D612A1C57D1FA004D5524 /* Assets.xcassets */; };
 		4A1D612E1C57D1FA004D5524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1D612C1C57D1FA004D5524 /* LaunchScreen.storyboard */; };
-		4A32B08F1C57D80D00BB7567 /* RGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B08D1C57D80D00BB7567 /* RGMasterViewController.m */; };
-		4A32B0901C57D80D00BB7567 /* RGMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B08E1C57D80D00BB7567 /* RGMasterViewController.xib */; };
-		4A32B0961C57DAD400BB7567 /* RGEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0941C57DAD400BB7567 /* RGEventCollectionViewCell.m */; };
-		4A32B0971C57DAD400BB7567 /* RGEventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0951C57DAD400BB7567 /* RGEventCollectionViewCell.xib */; };
-		4A32B09D1C57DCEF00BB7567 /* RGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B09B1C57DCEF00BB7567 /* RGDetailViewController.m */; };
-		4A32B09E1C57DCEF00BB7567 /* RGDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B09C1C57DCEF00BB7567 /* RGDetailViewController.xib */; };
-		4A32B0A51C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0A31C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m */; };
-		4A32B0A61C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0A41C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.xib */; };
-		4A32B0AA1C58014D00BB7567 /* RGEventItemTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0A81C58014D00BB7567 /* RGEventItemTitleTableViewCell.m */; };
-		4A32B0AB1C58014D00BB7567 /* RGEventItemTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0A91C58014D00BB7567 /* RGEventItemTitleTableViewCell.xib */; };
-		4A32B0AF1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A32B0AD1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.m */; };
-		4A32B0B01C58016500BB7567 /* RGEventItemDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32B0AE1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.xib */; };
-		4A87B84C1C58163200F09EF6 /* RGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A87B84B1C58163200F09EF6 /* RGNetworkManager.m */; };
-		4A87B8501C581E9E00F09EF6 /* RGEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A87B84F1C581E9E00F09EF6 /* RGEventModel.m */; };
-		4A87B8541C5826EC00F09EF6 /* RGDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A87B8531C5826EC00F09EF6 /* RGDateFormatter.m */; };
 		F855F626A1C34956318583CF /* libPods-PW_Interview_Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PW_Interview_Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A17140E1C591A2400BD3DDC /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		4A1714111C5939AB00BD3DDC /* RGDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDateFormatter.h; sourceTree = "<group>"; };
+		4A1714121C5939AB00BD3DDC /* RGDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDateFormatter.m; sourceTree = "<group>"; };
+		4A1714141C5939AB00BD3DDC /* RGNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGNetworkManager.h; sourceTree = "<group>"; };
+		4A1714151C5939AB00BD3DDC /* RGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGNetworkManager.m; sourceTree = "<group>"; };
+		4A17141A1C5939F300BD3DDC /* RGEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventModel.h; sourceTree = "<group>"; };
+		4A17141B1C5939F300BD3DDC /* RGEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventModel.m; sourceTree = "<group>"; };
+		4A17141F1C593A4000BD3DDC /* RGDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDetailViewController.h; sourceTree = "<group>"; };
+		4A1714201C593A4000BD3DDC /* RGDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDetailViewController.m; sourceTree = "<group>"; };
+		4A1714221C593A4000BD3DDC /* RGMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMasterViewController.h; sourceTree = "<group>"; };
+		4A1714231C593A4000BD3DDC /* RGMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMasterViewController.m; sourceTree = "<group>"; };
+		4A1714291C593AC600BD3DDC /* RGEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventCollectionViewCell.h; sourceTree = "<group>"; };
+		4A17142A1C593AC600BD3DDC /* RGEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventCollectionViewCell.m; sourceTree = "<group>"; };
+		4A17142B1C593AC600BD3DDC /* RGEventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventCollectionViewCell.xib; sourceTree = "<group>"; };
+		4A17142D1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventItemDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		4A17142E1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventItemDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		4A17142F1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventItemDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		4A1714301C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventItemTimestampTableViewCell.h; sourceTree = "<group>"; };
+		4A1714311C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventItemTimestampTableViewCell.m; sourceTree = "<group>"; };
+		4A1714321C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventItemTimestampTableViewCell.xib; sourceTree = "<group>"; };
+		4A1714331C593AC600BD3DDC /* RGEventItemTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventItemTitleTableViewCell.h; sourceTree = "<group>"; };
+		4A1714341C593AC600BD3DDC /* RGEventItemTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventItemTitleTableViewCell.m; sourceTree = "<group>"; };
+		4A1714351C593AC600BD3DDC /* RGEventItemTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventItemTitleTableViewCell.xib; sourceTree = "<group>"; };
+		4A1714361C593AC600BD3DDC /* RGDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGDetailViewController.xib; sourceTree = "<group>"; };
+		4A1714371C593AC600BD3DDC /* RGMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGMasterViewController.xib; sourceTree = "<group>"; };
 		4A1D611B1C57D1FA004D5524 /* PW_Interview_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PW_Interview_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1D611F1C57D1FA004D5524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A1D61211C57D1FA004D5524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PW_Interview_Project/AppDelegate.h; sourceTree = "<group>"; };
@@ -39,31 +63,7 @@
 		4A1D612A1C57D1FA004D5524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A1D612D1C57D1FA004D5524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A1D612F1C57D1FA004D5524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A32B08C1C57D80D00BB7567 /* RGMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMasterViewController.h; sourceTree = "<group>"; };
-		4A32B08D1C57D80D00BB7567 /* RGMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMasterViewController.m; sourceTree = "<group>"; };
-		4A32B08E1C57D80D00BB7567 /* RGMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGMasterViewController.xib; sourceTree = "<group>"; };
-		4A32B0931C57DAD400BB7567 /* RGEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventCollectionViewCell.h; sourceTree = "<group>"; };
-		4A32B0941C57DAD400BB7567 /* RGEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventCollectionViewCell.m; sourceTree = "<group>"; };
-		4A32B0951C57DAD400BB7567 /* RGEventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventCollectionViewCell.xib; sourceTree = "<group>"; };
-		4A32B09A1C57DCEF00BB7567 /* RGDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDetailViewController.h; sourceTree = "<group>"; };
-		4A32B09B1C57DCEF00BB7567 /* RGDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDetailViewController.m; sourceTree = "<group>"; };
-		4A32B09C1C57DCEF00BB7567 /* RGDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGDetailViewController.xib; sourceTree = "<group>"; };
 		4A32B0A01C57E2BF00BB7567 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		4A32B0A21C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventItemTimestampTableViewCell.h; sourceTree = "<group>"; };
-		4A32B0A31C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventItemTimestampTableViewCell.m; sourceTree = "<group>"; };
-		4A32B0A41C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventItemTimestampTableViewCell.xib; sourceTree = "<group>"; };
-		4A32B0A71C58014D00BB7567 /* RGEventItemTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventItemTitleTableViewCell.h; sourceTree = "<group>"; };
-		4A32B0A81C58014D00BB7567 /* RGEventItemTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventItemTitleTableViewCell.m; sourceTree = "<group>"; };
-		4A32B0A91C58014D00BB7567 /* RGEventItemTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventItemTitleTableViewCell.xib; sourceTree = "<group>"; };
-		4A32B0AC1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventItemDescriptionTableViewCell.h; sourceTree = "<group>"; };
-		4A32B0AD1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventItemDescriptionTableViewCell.m; sourceTree = "<group>"; };
-		4A32B0AE1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RGEventItemDescriptionTableViewCell.xib; sourceTree = "<group>"; };
-		4A87B84A1C58163200F09EF6 /* RGNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGNetworkManager.h; sourceTree = "<group>"; };
-		4A87B84B1C58163200F09EF6 /* RGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGNetworkManager.m; sourceTree = "<group>"; };
-		4A87B84E1C581E9E00F09EF6 /* RGEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGEventModel.h; sourceTree = "<group>"; };
-		4A87B84F1C581E9E00F09EF6 /* RGEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGEventModel.m; sourceTree = "<group>"; };
-		4A87B8521C5826EC00F09EF6 /* RGDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDateFormatter.h; sourceTree = "<group>"; };
-		4A87B8531C5826EC00F09EF6 /* RGDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDateFormatter.m; sourceTree = "<group>"; };
 		73B80F31EC614DAABEC165F7 /* Pods-PW_Interview_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5F336146D1B089031186B4 /* Pods-PW_Interview_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW_Interview_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-PW_Interview_Project/Pods-PW_Interview_Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +80,122 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A17140F1C5939AB00BD3DDC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4A1714101C5939AB00BD3DDC /* Date Formatter */,
+				4A1714131C5939AB00BD3DDC /* Network */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4A1714101C5939AB00BD3DDC /* Date Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				4A1714111C5939AB00BD3DDC /* RGDateFormatter.h */,
+				4A1714121C5939AB00BD3DDC /* RGDateFormatter.m */,
+			);
+			path = "Date Formatter";
+			sourceTree = "<group>";
+		};
+		4A1714131C5939AB00BD3DDC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4A1714141C5939AB00BD3DDC /* RGNetworkManager.h */,
+				4A1714151C5939AB00BD3DDC /* RGNetworkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4A1714181C5939F300BD3DDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A1714191C5939F300BD3DDC /* EventModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A1714191C5939F300BD3DDC /* EventModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A17141A1C5939F300BD3DDC /* RGEventModel.h */,
+				4A17141B1C5939F300BD3DDC /* RGEventModel.m */,
+			);
+			path = EventModel;
+			sourceTree = "<group>";
+		};
+		4A17141D1C593A4000BD3DDC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A17141E1C593A4000BD3DDC /* Detail View Controller */,
+				4A1714211C593A4000BD3DDC /* Master View Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A17141E1C593A4000BD3DDC /* Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A17141F1C593A4000BD3DDC /* RGDetailViewController.h */,
+				4A1714201C593A4000BD3DDC /* RGDetailViewController.m */,
+			);
+			path = "Detail View Controller";
+			sourceTree = "<group>";
+		};
+		4A1714211C593A4000BD3DDC /* Master View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A1714221C593A4000BD3DDC /* RGMasterViewController.h */,
+				4A1714231C593A4000BD3DDC /* RGMasterViewController.m */,
+			);
+			path = "Master View Controller";
+			sourceTree = "<group>";
+		};
+		4A1714261C593AC600BD3DDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A1714271C593AC600BD3DDC /* Cells */,
+				4A1714361C593AC600BD3DDC /* RGDetailViewController.xib */,
+				4A1714371C593AC600BD3DDC /* RGMasterViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A1714271C593AC600BD3DDC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A1714281C593AC600BD3DDC /* Event CollectionView Cell */,
+				4A17142C1C593AC600BD3DDC /* Event Item Cells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4A1714281C593AC600BD3DDC /* Event CollectionView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4A1714291C593AC600BD3DDC /* RGEventCollectionViewCell.h */,
+				4A17142A1C593AC600BD3DDC /* RGEventCollectionViewCell.m */,
+				4A17142B1C593AC600BD3DDC /* RGEventCollectionViewCell.xib */,
+			);
+			path = "Event CollectionView Cell";
+			sourceTree = "<group>";
+		};
+		4A17142C1C593AC600BD3DDC /* Event Item Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A17142D1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.h */,
+				4A17142E1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.m */,
+				4A17142F1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.xib */,
+				4A1714301C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.h */,
+				4A1714311C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.m */,
+				4A1714321C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.xib */,
+				4A1714331C593AC600BD3DDC /* RGEventItemTitleTableViewCell.h */,
+				4A1714341C593AC600BD3DDC /* RGEventItemTitleTableViewCell.m */,
+				4A1714351C593AC600BD3DDC /* RGEventItemTitleTableViewCell.xib */,
+			);
+			path = "Event Item Cells";
+			sourceTree = "<group>";
+		};
 		4A1D61121C57D1FA004D5524 = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +219,10 @@
 		4A1D611D1C57D1FA004D5524 /* PW_Interview_Project */ = {
 			isa = PBXGroup;
 			children = (
-				4A87B8551C583DCA00F09EF6 /* Utils */,
-				4A87B84D1C581E5C00F09EF6 /* Models */,
-				4A32B0921C57D81C00BB7567 /* Views */,
-				4A32B08B1C57D7C600BB7567 /* Controllers */,
+				4A1714261C593AC600BD3DDC /* Views */,
+				4A17141D1C593A4000BD3DDC /* Controllers */,
+				4A1714181C5939F300BD3DDC /* Models */,
+				4A17140F1C5939AB00BD3DDC /* Utils */,
 				4A1D612A1C57D1FA004D5524 /* Assets.xcassets */,
 				4A1D612C1C57D1FA004D5524 /* LaunchScreen.storyboard */,
 				4A1D612F1C57D1FA004D5524 /* Info.plist */,
@@ -123,114 +239,6 @@
 				4A17140E1C591A2400BD3DDC /* constants.h */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4A32B08B1C57D7C600BB7567 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				4A32B0911C57D81200BB7567 /* Master View Controller */,
-				4A32B09F1C57DCF400BB7567 /* Detail View Controller */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		4A32B0911C57D81200BB7567 /* Master View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4A32B08C1C57D80D00BB7567 /* RGMasterViewController.h */,
-				4A32B08D1C57D80D00BB7567 /* RGMasterViewController.m */,
-			);
-			name = "Master View Controller";
-			sourceTree = "<group>";
-		};
-		4A32B0921C57D81C00BB7567 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4A32B0981C57DAEE00BB7567 /* Cells */,
-				4A32B08E1C57D80D00BB7567 /* RGMasterViewController.xib */,
-				4A32B09C1C57DCEF00BB7567 /* RGDetailViewController.xib */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		4A32B0981C57DAEE00BB7567 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				4A32B0A11C57FFBB00BB7567 /* Event Items Cells */,
-				4A32B0991C57DB0B00BB7567 /* Event CollectionView Cell */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		4A32B0991C57DB0B00BB7567 /* Event CollectionView Cell */ = {
-			isa = PBXGroup;
-			children = (
-				4A32B0931C57DAD400BB7567 /* RGEventCollectionViewCell.h */,
-				4A32B0941C57DAD400BB7567 /* RGEventCollectionViewCell.m */,
-				4A32B0951C57DAD400BB7567 /* RGEventCollectionViewCell.xib */,
-			);
-			name = "Event CollectionView Cell";
-			sourceTree = "<group>";
-		};
-		4A32B09F1C57DCF400BB7567 /* Detail View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4A32B09A1C57DCEF00BB7567 /* RGDetailViewController.h */,
-				4A32B09B1C57DCEF00BB7567 /* RGDetailViewController.m */,
-			);
-			name = "Detail View Controller";
-			sourceTree = "<group>";
-		};
-		4A32B0A11C57FFBB00BB7567 /* Event Items Cells */ = {
-			isa = PBXGroup;
-			children = (
-				4A32B0A21C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.h */,
-				4A32B0A31C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m */,
-				4A32B0A41C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.xib */,
-				4A32B0A71C58014D00BB7567 /* RGEventItemTitleTableViewCell.h */,
-				4A32B0A81C58014D00BB7567 /* RGEventItemTitleTableViewCell.m */,
-				4A32B0A91C58014D00BB7567 /* RGEventItemTitleTableViewCell.xib */,
-				4A32B0AC1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.h */,
-				4A32B0AD1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.m */,
-				4A32B0AE1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.xib */,
-			);
-			name = "Event Items Cells";
-			sourceTree = "<group>";
-		};
-		4A87B8491C58162900F09EF6 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				4A87B84A1C58163200F09EF6 /* RGNetworkManager.h */,
-				4A87B84B1C58163200F09EF6 /* RGNetworkManager.m */,
-			);
-			name = Network;
-			sourceTree = "<group>";
-		};
-		4A87B84D1C581E5C00F09EF6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4A87B84E1C581E9E00F09EF6 /* RGEventModel.h */,
-				4A87B84F1C581E9E00F09EF6 /* RGEventModel.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		4A87B8511C5826DE00F09EF6 /* Date Formatter */ = {
-			isa = PBXGroup;
-			children = (
-				4A87B8521C5826EC00F09EF6 /* RGDateFormatter.h */,
-				4A87B8531C5826EC00F09EF6 /* RGDateFormatter.m */,
-			);
-			name = "Date Formatter";
-			sourceTree = "<group>";
-		};
-		4A87B8551C583DCA00F09EF6 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				4A87B8511C5826DE00F09EF6 /* Date Formatter */,
-				4A87B8491C58162900F09EF6 /* Network */,
-			);
-			name = Utils;
 			sourceTree = "<group>";
 		};
 		6E8E57C0C531181921E2B199 /* Pods */ = {
@@ -310,14 +318,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A17143D1C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.xib in Resources */,
+				4A1714391C593AC600BD3DDC /* RGEventCollectionViewCell.xib in Resources */,
+				4A17143B1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.xib in Resources */,
 				4A1D612E1C57D1FA004D5524 /* LaunchScreen.storyboard in Resources */,
-				4A32B0971C57DAD400BB7567 /* RGEventCollectionViewCell.xib in Resources */,
-				4A32B09E1C57DCEF00BB7567 /* RGDetailViewController.xib in Resources */,
 				4A1D612B1C57D1FA004D5524 /* Assets.xcassets in Resources */,
-				4A32B0A61C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.xib in Resources */,
-				4A32B0AB1C58014D00BB7567 /* RGEventItemTitleTableViewCell.xib in Resources */,
-				4A32B0B01C58016500BB7567 /* RGEventItemDescriptionTableViewCell.xib in Resources */,
-				4A32B0901C57D80D00BB7567 /* RGMasterViewController.xib in Resources */,
+				4A1714401C593AC600BD3DDC /* RGDetailViewController.xib in Resources */,
+				4A17143F1C593AC600BD3DDC /* RGEventItemTitleTableViewCell.xib in Resources */,
+				4A1714411C593AC600BD3DDC /* RGMasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,17 +384,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A32B0A51C57FFE300BB7567 /* RGEventItemTimestampTableViewCell.m in Sources */,
-				4A32B09D1C57DCEF00BB7567 /* RGDetailViewController.m in Sources */,
-				4A87B8501C581E9E00F09EF6 /* RGEventModel.m in Sources */,
+				4A1714381C593AC600BD3DDC /* RGEventCollectionViewCell.m in Sources */,
+				4A1714251C593A4000BD3DDC /* RGMasterViewController.m in Sources */,
+				4A1714161C5939AB00BD3DDC /* RGDateFormatter.m in Sources */,
 				4A1D61231C57D1FA004D5524 /* AppDelegate.m in Sources */,
-				4A32B0961C57DAD400BB7567 /* RGEventCollectionViewCell.m in Sources */,
-				4A87B8541C5826EC00F09EF6 /* RGDateFormatter.m in Sources */,
-				4A32B08F1C57D80D00BB7567 /* RGMasterViewController.m in Sources */,
+				4A1714241C593A4000BD3DDC /* RGDetailViewController.m in Sources */,
+				4A17143E1C593AC600BD3DDC /* RGEventItemTitleTableViewCell.m in Sources */,
+				4A17143C1C593AC600BD3DDC /* RGEventItemTimestampTableViewCell.m in Sources */,
+				4A1714171C5939AB00BD3DDC /* RGNetworkManager.m in Sources */,
+				4A17141C1C5939F300BD3DDC /* RGEventModel.m in Sources */,
+				4A17143A1C593AC600BD3DDC /* RGEventItemDescriptionTableViewCell.m in Sources */,
 				4A1D61201C57D1FA004D5524 /* main.m in Sources */,
-				4A32B0AF1C58016500BB7567 /* RGEventItemDescriptionTableViewCell.m in Sources */,
-				4A87B84C1C58163200F09EF6 /* RGNetworkManager.m in Sources */,
-				4A32B0AA1C58014D00BB7567 /* RGEventItemTitleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
