@@ -1,4 +1,4 @@
-# PW_Interview_project_2016
+# Phunware Interview Project 2016
 
 This repository contains the source code for the Interview Project
 
