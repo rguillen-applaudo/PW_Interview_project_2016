@@ -7,6 +7,7 @@
 //
 
 #import "RGMasterViewController.h"
+#import "constants.h"
 #import "RGEventCollectionViewCell.h"
 #import "RGDetailViewController.h"
 #import "RGNetworkManager.h"
@@ -80,7 +81,7 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     RGEventModel *event = [self.eventsArray objectAtIndex:indexPath.row];
-    RGDetailViewController *detailViewController = [[RGDetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]];
+    RGDetailViewController *detailViewController = [[RGDetailViewController alloc] initWithNibName:@"RGDetailViewController" bundle:[NSBundle mainBundle]];
     detailViewController.event = event;
     [[self navigationController] pushViewController:detailViewController animated:YES];
 }
@@ -91,7 +92,7 @@
     if (self.networkManager.networkManagerConnected) {
         NSLog(@"Connected");
         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        [self.networkManager requestDataFromURL:@"https://raw.githubusercontent.com/phunware/services-interview-resources/master/feed.json" success:^(id responseObject){
+        [self.networkManager requestDataFromURL:API_URL success:^(id responseObject){
             NSLog(@"funciona");
             NSArray *jsonArray = [NSArray arrayWithArray:responseObject];
             self.eventsArray = [[NSMutableArray alloc] initWithCapacity:0];

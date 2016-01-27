@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  RGDetailViewController.h
 //  PW_Interview_Project
 //
 //  Created by Ricardo Guillen on 1/26/16.

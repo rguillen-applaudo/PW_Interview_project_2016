@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		2901FBF60A66796E767B8CE8 /* libPods-PW_Interview_Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PW_Interview_Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A17140E1C591A2400BD3DDC /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		4A1D611B1C57D1FA004D5524 /* PW_Interview_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PW_Interview_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1D611F1C57D1FA004D5524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A1D61211C57D1FA004D5524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PW_Interview_Project/AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 			children = (
 				4A1D611F1C57D1FA004D5524 /* main.m */,
 				4A32B0A01C57E2BF00BB7567 /* PrefixHeader.pch */,
+				4A17140E1C591A2400BD3DDC /* constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

@@ -1,5 +1,5 @@
 //
-//  DetailViewController.m
+//  RGDetailViewController.m
 //  PW_Interview_Project
 //
 //  Created by Ricardo Guillen on 1/26/16.
@@ -70,30 +70,30 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *eventItem = [self.eventItems objectAtIndex:indexPath.row];
     if ([[eventItem valueForKey:@"item"] isEqualToString:@"timestamp"]) {
-        RGEventItemTimestampTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemTimeStampCell"];
+        RGEventItemTimestampTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RGEventItemTimeStampCell"];
         if (cell == nil) {
             cell = [[RGEventItemTimestampTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                                          reuseIdentifier:@"EventItemTimeStampCell"];
+                                                          reuseIdentifier:@"RGEventItemTimeStampCell"];
         }
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         cell.cellTextLabel.text = [eventItem valueForKey:@"text"];
         return cell;
     }
     else if ([[eventItem valueForKey:@"item"] isEqualToString:@"title"]){
-        RGEventItemTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemTitleCell"];
+        RGEventItemTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RGEventItemTitleCell"];
         if (cell == nil) {
             cell = [[RGEventItemTitleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                                          reuseIdentifier:@"EventItemTitleCell"];
+                                                          reuseIdentifier:@"RGEventItemTitleCell"];
         }
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         cell.cellTextLabel.text = [eventItem valueForKey:@"text"];
         return cell;
     }
     else if ([[eventItem valueForKey:@"item"] isEqualToString:@"description"]){
-        RGEventItemDescriptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemDescriptionCell"];
+        RGEventItemDescriptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RGEventItemDescriptionCell"];
         if (cell == nil) {
             cell = [[RGEventItemDescriptionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                                      reuseIdentifier:@"EventItemDescriptionCell"];
+                                                      reuseIdentifier:@"RGEventItemDescriptionCell"];
         }
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         cell.cellTextLabel.text = [eventItem valueForKey:@"text"];
@@ -129,9 +129,9 @@
 -(void)configureDetailTableView{
     
     [self.eventDetailTableView setBackgroundColor:[UIColor clearColor]];
-    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemTimestampTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemTimeStampCell"];
-    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemTitleTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemTitleCell"];
-    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"EventItemDescriptionTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"EventItemDescriptionCell"];
+    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"RGEventItemTimestampTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"RGEventItemTimeStampCell"];
+    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"RGEventItemTitleTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"RGEventItemTitleCell"];
+    [self.eventDetailTableView registerNib:[UINib nibWithNibName:@"RGEventItemDescriptionTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"RGEventItemDescriptionCell"];
     self.eventDetailTableView.rowHeight = UITableViewAutomaticDimension;
     self.eventDetailTableView.estimatedRowHeight = 160.0;
 }
