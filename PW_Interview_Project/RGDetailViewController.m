@@ -55,6 +55,7 @@
 - (void)configureTranslucentAppearance {
     [self scrollViewDidScroll:self.eventDetailTableView];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 }
 
 #pragma mark - UITableView DataSource
@@ -182,9 +183,12 @@
         [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
         [self.navigationController.navigationBar setShadowImage:nil];
         self.title = @"DeathStar Ventilation Design Meeting";
+        [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     } else {
         [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:0]];
         [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+        [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+        
         self.title = @"";
     }
     
