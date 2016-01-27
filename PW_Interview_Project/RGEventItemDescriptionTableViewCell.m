@@ -20,4 +20,22 @@
     // Configure the view for the selected state
 }
 
+- (void) setFrame:(CGRect)frame {
+    if (IS_IPAD) {
+        CGRect newFrame = frame;
+        
+        if (CGRectGetWidth(newFrame) > 600) {
+            CGFloat margin = (CGRectGetWidth(newFrame) - 600) / 2;
+            newFrame.origin.x = margin;
+            newFrame.size.width = 600;
+        }
+        [super setFrame:newFrame];
+    }
+    else{
+        [super setFrame:frame];
+    }
+    
+    
+}
+
 @end
