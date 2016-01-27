@@ -1,5 +1,5 @@
 //
-//  EventItemTimestampTableViewCell.h
+//  EventItemTitleTableViewCell.h
 //  PW_Interview_Project
 //
 //  Created by Ricardo Guillen on 1/26/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventItemTimestampTableViewCell : UITableViewCell
+@interface RGEventItemTitleTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *cellTextLabel;
 @end

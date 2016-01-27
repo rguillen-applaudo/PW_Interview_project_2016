@@ -8,7 +8,7 @@
 
 #import <JSONModel/JSONModel.h>
 
-@interface EventModel : JSONModel
+@interface RGEventModel : JSONModel
 @property (strong, nonatomic) NSString *descriptionSTR;
 @property (strong, nonatomic) NSString *titleSTR;
 @property (strong, nonatomic) NSString *timestampSTR;

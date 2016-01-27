@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Applaudo Studios. All rights reserved.
 //
 
-#import "DateFormatter.h"
+#import "RGDateFormatter.h"
 
-@implementation DateFormatter
+@implementation RGDateFormatter
 
 -(NSString *)formattedStringForTimeStamp:(NSString *)timestamp{
     if (timestamp && timestamp.length > 0) {

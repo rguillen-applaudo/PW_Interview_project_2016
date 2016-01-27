@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "MasterViewController.h"
+#import "RGMasterViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) UINavigationController *mainNavigationController;
-@property (nonatomic, strong) MasterViewController *masterViewController;
+@property (nonatomic, strong) RGMasterViewController *masterViewController;
 
 @end
 
@@ -22,7 +22,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
+    self.masterViewController = [[RGMasterViewController alloc] initWithNibName:@"RGMasterViewController" bundle:nil];
     self.mainNavigationController = [[UINavigationController alloc] initWithRootViewController:self.masterViewController];
     self.window.rootViewController = self.mainNavigationController;
     

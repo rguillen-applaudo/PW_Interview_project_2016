@@ -1,5 +1,5 @@
 //
-//  EventCollectionViewCell.h
+//  RGEventCollectionViewCell.h
 //  PW_Interview_Project
 //
 //  Created by Ricardo Guillen on 1/26/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventCollectionViewCell : UICollectionViewCell
+@interface RGEventCollectionViewCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (strong, nonatomic) IBOutlet UIView *gradientView;
 @property (strong, nonatomic) IBOutlet UILabel *timestampLabel;

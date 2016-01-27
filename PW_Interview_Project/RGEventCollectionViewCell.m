@@ -1,14 +1,14 @@
 //
-//  EventCollectionViewCell.m
+//  RGEventCollectionViewCell.m
 //  PW_Interview_Project
 //
 //  Created by Ricardo Guillen on 1/26/16.
 //  Copyright © 2016 Applaudo Studios. All rights reserved.
 //
 
-#import "EventCollectionViewCell.h"
+#import "RGEventCollectionViewCell.h"
 
-@implementation EventCollectionViewCell
+@implementation RGEventCollectionViewCell
 
 - (void)awakeFromNib {
     // Initialization code

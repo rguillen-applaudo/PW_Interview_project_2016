@@ -7,9 +7,9 @@
 //
 
 #import "DetailViewController.h"
-#import "EventItemTimestampTableViewCell.h"
-#import "EventItemTitleTableViewCell.h"
-#import "EventItemDescriptionTableViewCell.h"
+#import "RGEventItemTimestampTableViewCell.h"
+#import "RGEventItemTitleTableViewCell.h"
+#import "RGEventItemDescriptionTableViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 #import "UINavigationBar+Awesome.h"
@@ -70,9 +70,9 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *eventItem = [self.eventItems objectAtIndex:indexPath.row];
     if ([[eventItem valueForKey:@"item"] isEqualToString:@"timestamp"]) {
-        EventItemTimestampTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemTimeStampCell"];
+        RGEventItemTimestampTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemTimeStampCell"];
         if (cell == nil) {
-            cell = [[EventItemTimestampTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+            cell = [[RGEventItemTimestampTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                                           reuseIdentifier:@"EventItemTimeStampCell"];
         }
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
@@ -80,9 +80,9 @@
         return cell;
     }
     else if ([[eventItem valueForKey:@"item"] isEqualToString:@"title"]){
-        EventItemTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemTitleCell"];
+        RGEventItemTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemTitleCell"];
         if (cell == nil) {
-            cell = [[EventItemTitleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+            cell = [[RGEventItemTitleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                                           reuseIdentifier:@"EventItemTitleCell"];
         }
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
@@ -90,9 +90,9 @@
         return cell;
     }
     else if ([[eventItem valueForKey:@"item"] isEqualToString:@"description"]){
-        EventItemDescriptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemDescriptionCell"];
+        RGEventItemDescriptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventItemDescriptionCell"];
         if (cell == nil) {
-            cell = [[EventItemDescriptionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+            cell = [[RGEventItemDescriptionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                                       reuseIdentifier:@"EventItemDescriptionCell"];
         }
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];

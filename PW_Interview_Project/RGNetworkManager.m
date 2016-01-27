@@ -6,12 +6,12 @@
 //  Copyright (c) 2015 Applaudo Studios. All rights reserved.
 //
 
-#import "NetworkManager.h"
+#import "RGNetworkManager.h"
 #import <AFNetworking/AFNetworking.h>
 
-@implementation NetworkManager
+@implementation RGNetworkManager
 
--(NetworkManager *)startNetworkManager{
+-(RGNetworkManager *)startNetworkManager{
     return self;
 }
 

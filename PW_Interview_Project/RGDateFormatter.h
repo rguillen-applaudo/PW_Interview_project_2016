@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DateFormatter : NSObject
+@interface RGDateFormatter : NSObject
 -(NSString *)formattedStringForTimeStamp:(NSString *)timestamp;
 @end

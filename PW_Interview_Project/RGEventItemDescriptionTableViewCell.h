@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventItemDescriptionTableViewCell : UITableViewCell
+@interface RGEventItemDescriptionTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *cellTextLabel;
 @end

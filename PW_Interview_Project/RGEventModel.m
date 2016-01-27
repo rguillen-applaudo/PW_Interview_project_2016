@@ -6,10 +6,10 @@
 //  Copyright © 2016 Applaudo Studios. All rights reserved.
 //
 
-#import "EventModel.h"
-#import "DateFormatter.h"
+#import "RGEventModel.h"
+#import "RGDateFormatter.h"
 
-@implementation EventModel
+@implementation RGEventModel
 
 +(JSONKeyMapper*)keyMapper
 {
@@ -26,7 +26,7 @@
 }
 
 -(NSString *)formattedTimestamp{
-    NSString *stringFromDate = [[DateFormatter alloc] formattedStringForTimeStamp:self.timestampSTR];
+    NSString *stringFromDate = [[RGDateFormatter alloc] formattedStringForTimeStamp:self.timestampSTR];
     return stringFromDate;
 }
 

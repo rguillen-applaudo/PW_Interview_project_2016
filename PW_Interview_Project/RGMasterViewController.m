@@ -6,29 +6,29 @@
 //  Copyright © 2016 Applaudo Studios. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "EventCollectionViewCell.h"
+#import "RGMasterViewController.h"
+#import "RGEventCollectionViewCell.h"
 #import "DetailViewController.h"
-#import "NetworkManager.h"
+#import "RGNetworkManager.h"
 #import "MBProgressHUD.h"
-#import "EventModel.h"
+#import "RGEventModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface MasterViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate>
+@interface RGMasterViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UICollectionView *eventsCollectionView;
 @property (nonatomic, strong) NSMutableArray *eventsArray;
-@property (nonatomic, strong) NetworkManager *networkManager;
+@property (nonatomic, strong) RGNetworkManager *networkManager;
 @end
 
-@implementation MasterViewController
+@implementation RGMasterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"PHUN APP";
-    [self.eventsCollectionView registerNib:[UINib nibWithNibName:@"EventCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"EventCollectionViewCell"];
+    [self.eventsCollectionView registerNib:[UINib nibWithNibName:@"RGEventCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"RGEventCollectionViewCell"];
     [self.eventsCollectionView setBackgroundColor:[UIColor clearColor]];
-    self.networkManager = [[NetworkManager alloc] startNetworkManager];
+    self.networkManager = [[RGNetworkManager alloc] startNetworkManager];
     [self requestEventsFromAPI];
 }
 
@@ -53,9 +53,9 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    EventModel *event = [self.eventsArray objectAtIndex:indexPath.row];
+    RGEventModel *event = [self.eventsArray objectAtIndex:indexPath.row];
     NSLog(@"event %@", event);
-    EventCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"EventCollectionViewCell" forIndexPath:indexPath];
+    RGEventCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"RGEventCollectionViewCell" forIndexPath:indexPath];
     
     [cell.backgroundImage sd_setImageWithURL:[NSURL URLWithString:event.imageSTR]
                       placeholderImage:[UIImage imageNamed:@"placeholder"]];
@@ -79,7 +79,7 @@
 #pragma mark - CollectionView Delegate
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    EventModel *event = [self.eventsArray objectAtIndex:indexPath.row];
+    RGEventModel *event = [self.eventsArray objectAtIndex:indexPath.row];
     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]];
     detailViewController.event = event;
     [[self navigationController] pushViewController:detailViewController animated:YES];
@@ -97,7 +97,7 @@
             self.eventsArray = [[NSMutableArray alloc] initWithCapacity:0];
             for (id item in jsonArray) {
                 NSError* err = nil;
-                EventModel* event = [[EventModel alloc] initWithDictionary:item error:&err];
+                RGEventModel* event = [[RGEventModel alloc] initWithDictionary:item error:&err];
                 NSLog(@"ERROR %@", err.localizedDescription);
                 [self.eventsArray addObject:event];
             }

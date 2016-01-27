@@ -1,14 +1,14 @@
 //
-//  EventItemTimestampTableViewCell.m
+//  EventItemDescriptionTableViewCell.m
 //  PW_Interview_Project
 //
 //  Created by Ricardo Guillen on 1/26/16.
 //  Copyright © 2016 Applaudo Studios. All rights reserved.
 //
 
-#import "EventItemTimestampTableViewCell.h"
+#import "RGEventItemDescriptionTableViewCell.h"
 
-@implementation EventItemTimestampTableViewCell
+@implementation RGEventItemDescriptionTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
